@@ -1,12 +1,12 @@
-div.pink {
+.pink {
     font-family: 'Courier New', Courier, monospace;
     color: deeppink;
 }
-div.red {
+.red {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: firebrick
 }
-div.blue {
+.blue {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: blue;
 }
