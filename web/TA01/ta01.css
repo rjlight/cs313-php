@@ -1,14 +1,14 @@
 .pink {
     font-family: 'Courier New', Courier, monospace;
-    color: deeppink;
+    background-color: deeppink;
 }
 .red {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: firebrick
+    background-color: firebrick
 }
 .blue {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: blue;
+    background-color: blue;
 }
 div:hover {
     font-weight: bold;
