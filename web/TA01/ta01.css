@@ -1,14 +1,23 @@
 .pink {
     font-family: 'Courier New', Courier, monospace;
     background-color: deeppink;
+    color:white;
+    width:150px;
+    height:40px;
 }
 .red {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: firebrick
+    background-color: firebrick;
+    color:white;
+    width:150px;
+    height:40px;
 }
 .blue {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: blue;
+    color:white;
+    width:150px;
+    height:40px;
 }
 div:hover {
     font-weight: bold;
