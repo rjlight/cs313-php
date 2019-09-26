@@ -8,6 +8,6 @@ function clicked2() {
     document.getElementById("red").value = "Clicked";
 }
 function changeColor() {
-    var a = document.getElementsByClassName("pink").style.background-color; 
-    a = document.getElementsByName("color");
+    var a = document.getElementById("pink").style.background-color; 
+    a = document.getElementById("color");
 }
