@@ -5,6 +5,9 @@
     width:130px;
     height:20px;
 }
+button {
+    background-color:yellow;
+  }
 #red {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: firebrick;
