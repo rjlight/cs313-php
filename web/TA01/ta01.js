@@ -1,5 +1,6 @@
 function clicked() {
-    document.getElementById("pink") = "Clicked";
+    var a = document.getElementById("pink");
+    a = "Clicked";
 }
 function clicked1() {
     document.getElementById("blue").value = "Clicked";
