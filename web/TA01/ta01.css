@@ -6,14 +6,14 @@
     height:20px;
 }
 #red {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     background-color: firebrick;
     color:white;
     width:130px;
     height:20px;
 }
 #blue {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     background-color: blue;
     color:white;
     width:130px;
