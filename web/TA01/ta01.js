@@ -1,5 +1,5 @@
 function clicked() {
-    document.getElementsByClassName("pink").value = "Clicked";
+    document.getElementByid("pink").value = "Clicked";
 }
 function clicked1() {
     document.getElementsByClassName("blue").value = "Clicked";
