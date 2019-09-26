@@ -9,6 +9,5 @@ function clicked2() {
 }
 function changeColor() {
     var a = document.getElementById("color");
-    var b = document.getElementById("pink").style.background-color;
-    b = a;
+    document.getElementById("pink").style.backgroundColor = a;
 }
