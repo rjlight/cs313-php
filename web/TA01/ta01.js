@@ -1,11 +1,11 @@
 function clicked() {
-    document.getElementsByClassName("pink") = "Clicked";
+    document.getElementsByClassName("pink").value = "Clicked";
 }
 function clicked1() {
-    document.getElementsByClassName("blue") = "Clicked";
+    document.getElementsByClassName("blue").value = "Clicked";
 }
 function clicked2() {
-    document.getElementsByClassName("red") = "Clicked";
+    document.getElementsByClassName("red").value = "Clicked";
 }
 function changeColor() {
     var a = document.getElementsByClassName("pink").style.background-color; 
