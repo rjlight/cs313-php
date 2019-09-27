@@ -1,7 +1,5 @@
 body {
-    background-color: azure;
-    align-content: center;
-    align-items: center;
+    background-color: aliceblue;
 }
 .solid {
     border-style: solid;
@@ -12,18 +10,22 @@ body {
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: midnightblue;
+    text-align: center;
 }
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: tan;
+    text-align: center;
 }
 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: saddlebrown; 
+    color: saddlebrown;
+    text-align: center; 
 }
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: teal;
+    text-align: center;
 }
 #pancakes {
     width: 200;
@@ -32,10 +34,12 @@ h3 {
 #waffles {
     width: 600;
     height: 300;
+    align-content: center;
 }
 #muffins {
     width: 250;
     height: 300;
+    align-content: center;
 }
 footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

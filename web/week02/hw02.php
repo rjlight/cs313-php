@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Welcome to Rachel's Homepage!</h1>
-<h2>This page is about baking, someting I love</h2>
+<h2>This page is about baking, something I love</h2>
     <p>Often the question is asked, "what do you live for?" While I live for many
     things, I <i>wake up</i> for breakfast!</p>
 <h3>Normal mornings I eat oatmeal, pretty plain with just cinnemon. But on the 
