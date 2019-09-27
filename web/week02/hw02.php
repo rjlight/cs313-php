@@ -14,9 +14,9 @@
     weekends I make pancakes, waffles, muffins, or whatever looks best on 
     Pinterest</h3>
 <p id="yay"></p>
-<img onmouseover="pan()" src="pancakes.PNG" alt="Pancakes" id="pancakes" class="solid"/>
+<center><img onmouseover="pan()" src="pancakes.PNG" alt="Pancakes" id="pancakes" class="solid"/>
 <img onmouseover="waf()" src="waffles.PNG" alt="waffles" id="waffles" class="solid"/>
-<img onmouseover="muf()" src="muffins.PNG" alt="Muffins" id="muffins" class="solid"/>
+<img onmouseover="muf()" src="muffins.PNG" alt="Muffins" id="muffins" class="solid"/></center>
 <p>Please see link for other 
 <a href="hw02pg2.php">assignments</a>
 </p>
