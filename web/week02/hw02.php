@@ -9,7 +9,7 @@
 <h1>Welcome to Rachel's Homepage!</h1>
 <h2>This page is about baking, someting I love</h2>
     <p>Often the question is asked, "what do you live for?" While I live for many
-    things, I <i>wake up</i>for breakfast!</p>
+    things, I <i>wake up</i> for breakfast!</p>
 <h3>Normal mornings I eat oatmeal, pretty plain with just cinnemon. But on the 
     weekends I make pancakes, waffles, muffins, or whatever looks best on 
     Pinterest</h3>

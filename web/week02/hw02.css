@@ -1,6 +1,7 @@
 body {
-    background-color: azure
+    background-color: azure;
     align-content: center;
+    align-items: center;
 }
 .solid {
     border-style: solid;
