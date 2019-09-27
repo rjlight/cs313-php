@@ -7,19 +7,18 @@
 </head>
 <body>
 <h1>Welcome to Rachel's Homepage</h1>
-<h2>This page is about baking, something I love</h2>
+<h2>This page is about baking, something I love to do</h2>
     <p>Often the question is asked, "what do you live for?" While I live for many
     things, I <ins>wake up</ins> for breakfast!</p>
-<h3>Normal mornings I eat oatmeal, pretty plain with just cinnemon. But on the 
-    weekends I make waffles, pancakes, muffins, or whatever looks best on 
-    Pinterest</h3>
+<h3>Weekend breakfast are my favoite; waffles, pancakes, muffins, or whatever looks best on 
+    Pinterest.</h3>
 <p id="yay"></p>
 <center>
-    <img onclick="waf()" src="waffles.PNG" alt="waffles" id="waffles" class="solid"/>
+    <img onClick="waf()" src="waffles.PNG" alt="waffles" id="waffles" class="solid"/>
     <img onmouseover="pan()" src="pancakes.PNG" alt="Pancakes" id="pancakes" class="solid"/>
     <img onmouseover="muf()" src="muffins.PNG" alt="Muffins" id="muffins" class="solid"/>
 </center>
-<p>Baked sweets hold a special place in my heart</p>
+<p>Baked sweets hold a special place in my heart.</p>
 <h3>When I need a break from school, I've been known to whip up a batch of chocolate chip cookies,
     banana bread, or something new like pomegranate scones!</h3>
 <center>
@@ -28,7 +27,7 @@
     <img onmouseover="scone()" src="scone.PNG" alt="Scones" id="scone" class="solid"/>
 </center>
 <p>We can't forget the wonderful homemade breads!</p>
-<h3>When I have a bit more time, I love to make wheat bread, bagels or rolls</h3>
+<h3>When I have a bit more time, I love to make wheat bread, bagels or rolls.</h3>
 <center>
     <img onclick="whe()" src="wheat.PNG" alt="Wheat Bread" id="wheat" class="solid"/>
     <img onmouseover="bag()" src="bagel.PNG" alt="Bagels" id="bagel" class="solid"/>
