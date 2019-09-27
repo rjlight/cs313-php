@@ -14,8 +14,8 @@
     Pinterest.</h3>
 <p id="yay"></p>
 <center>
-    <img onClick="waf()" src="waffles.PNG" alt="waffles" id="waffles" class="solid"/>
-    <img onmouseover="pan()" src="pancakes.PNG" alt="Pancakes" id="pancakes" class="solid"/>
+    <img src="waffles.PNG" alt="waffles" id="waffles" class="solid" onclick="waf()"/>
+    <img src="pancakes.PNG" alt="Pancakes" id="pancakes" class="solid" onmouseover="pan()"/>
     <img onmouseover="muf()" src="muffins.PNG" alt="Muffins" id="muffins" class="solid"/>
 </center>
 <p>Baked sweets hold a special place in my heart.</p>
