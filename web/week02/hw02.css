@@ -12,7 +12,8 @@ h1 {
     color: midnightblue;
     text-align: center;
     border-style: solid;
-    border-color: dodgerblue;;
+    border-color: dodgerblue;
+    padding: 15px;
 }
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -21,7 +22,7 @@ h2 {
 }
 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: saddlebrown;
+    color: midnightblue;
     text-align: center; 
 }
 h3 {
