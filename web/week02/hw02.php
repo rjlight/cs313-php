@@ -12,7 +12,7 @@
     things, I <ins>wake up</ins> for breakfast!</p>
 <h3>Weekend breakfast are my favoite; waffles, pancakes, muffins, or whatever looks best on 
     Pinterest.</h3>
-<p id="yay"></p>
+<p id="yay">null</p>
 <center>
     <img src="waffles.PNG" alt="waffles" id="waffles" class="solid" style="width: 200;height: 300;" onclick="waf()"/>
     <img src="pancakes.PNG" alt="Pancakes" id="pancakes" class="solid" onmouseover="pan()"/>
