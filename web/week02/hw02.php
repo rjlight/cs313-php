@@ -14,7 +14,7 @@
     Pinterest.</h3>
 <p id="yay"></p>
 <center>
-    <img src="waffles.PNG" alt="waffles" id="waffles" class="solid" onclick="waf()"/>
+    <img src="waffles.PNG" alt="waffles" id="waffles" class="solid" style="width: 200;height: 300;" onclick="waf()"/>
     <img src="pancakes.PNG" alt="Pancakes" id="pancakes" class="solid" onmouseover="pan()"/>
     <img onmouseover="muf()" src="muffins.PNG" alt="Muffins" id="muffins" class="solid"/>
 </center>
