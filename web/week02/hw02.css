@@ -1,5 +1,5 @@
 body {
-    background: blueSKy.jpg;
+    background-image: blueSKy.jpg;
     max-width: 100%;
 }
 .solid {
@@ -8,6 +8,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
+    margin: 15px;
 }
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
