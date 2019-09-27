@@ -19,7 +19,7 @@
     <img onmouseover="pan()" src="pancakes.PNG" alt="Pancakes" id="pancakes" class="solid"/>
     <img onmouseover="muf()" src="muffins.PNG" alt="Muffins" id="muffins" class="solid"/>
 </center>
-<p>Don't worry, I love to make treats too</p>
+<p>Baked sweets hold a special place in my heart</p>
 <h3>When I need a break from school, I've been known to whip up a batch of chocolate chip cookies,
     banana bread, or something new like pomegranate scones!</h3>
 <center>
@@ -27,7 +27,7 @@
     <img onmouseover="bread()" src="bread.PNG" alt="Banana Bread" id="bread" class="solid"/>
     <img onmouseover="scone()" src="scone.PNG" alt="Scones" id="scone" class="solid"/>
 </center>
-<p>I love to make breads</p>
+<p>We can't forget the wonderful homemade breads!</p>
 <h3>When I have a bit more time, I love to make wheat bread, bagels or rolls</h3>
 <center>
     <img onclick="whe()" src="wheat.PNG" alt="Wheat Bread" id="wheat" class="solid"/>
