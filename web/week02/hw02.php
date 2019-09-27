@@ -14,22 +14,24 @@
     Pinterest.</h3>
 <p id="yay">null</p>
 <center>
-    <img src="waffles.PNG" alt="waffles" id="waffles" class="solid" style="width: 200;height: 300;" onclick="waf()"/>
+    <img src="waffles.PNG" alt="waffles" id="waffles" class="solid" onmouseover="waf()"/>
     <img src="pancakes.PNG" alt="Pancakes" id="pancakes" class="solid" onmouseover="pan()"/>
     <img onmouseover="muf()" src="muffins.PNG" alt="Muffins" id="muffins" class="solid"/>
 </center>
 <p>Baked sweets hold a special place in my heart.</p>
 <h3>When I need a break from school, I've been known to whip up a batch of chocolate chip cookies,
     banana bread, or something new like pomegranate scones!</h3>
+<p id="yay1">null</p>
 <center>
-    <img onclick="cook()" src="cookies.PNG" alt="Cookies" id="cook" class="solid"/>
+    <img onmouseover="cook()" src="cookies.PNG" alt="Cookies" id="cook" class="solid"/>
     <img onmouseover="bread()" src="bread.PNG" alt="Banana Bread" id="bread" class="solid"/>
     <img onmouseover="scone()" src="scone.PNG" alt="Scones" id="scone" class="solid"/>
 </center>
 <p>We can't forget the wonderful homemade breads!</p>
 <h3>When I have a bit more time, I love to make wheat bread, bagels or rolls.</h3>
+<p id="yay2">null</p>
 <center>
-    <img onclick="whe()" src="wheat.PNG" alt="Wheat Bread" id="wheat" class="solid"/>
+    <img onmouseover="whe()" src="wheat.PNG" alt="Wheat Bread" id="wheat" class="solid"/>
     <img onmouseover="bag()" src="bagel.PNG" alt="Bagels" id="bagel" class="solid"/>
     <img onmouseover="roll()" src="rolls.PNG" alt="Rolls" id="rolls" class="solid"/>
 </center>

@@ -11,26 +11,26 @@ function muf() {
     document.getElementById("yay").style.visibility = "visible";
 }
 function cook() {
-    document.getElementById("yay").innerHTML = "Cookies are good for the soul!";
-    document.getElementById("yay").style.visibility = "visible";
+    document.getElementById("yay1").innerHTML = "Cookies are good for the soul!";
+    document.getElementById("yay1").style.visibility = "visible";
 }
 function bread() {
-    document.getElementById("yay").innerHTML = "Banana bread warms my heart!";
-    document.getElementById("yay").style.visibility = "visible";
+    document.getElementById("yay1").innerHTML = "Banana bread warms my heart!";
+    document.getElementById("yay1").style.visibility = "visible";
 }
 function scone() {
-    document.getElementById("yay").innerHTML = "Another scone please!";
-    document.getElementById("yay").style.visibility = "visible";
+    document.getElementById("yay1").innerHTML = "Another scone please!";
+    document.getElementById("yay1").style.visibility = "visible";
 }
 function whe() {
-    document.getElementById("yay").innerHTML = "Yum, wheat bread!";
-    document.getElementById("yay").style.visibility = "visible";
+    document.getElementById("yay2").innerHTML = "Yum, wheat bread!";
+    document.getElementById("yay2").style.visibility = "visible";
 }
 function bag() {
-    document.getElementById("yay").innerHTML = "Bagels are the bomb!";
-    document.getElementById("yay").style.visibility = "visible";
+    document.getElementById("yay2").innerHTML = "Bagels are the bomb!";
+    document.getElementById("yay2").style.visibility = "visible";
 }
 function roll() {
-    document.getElementById("yay").innerHTML = "Rolls are awesome!";
-    document.getElementById("yay").style.visibility = "visible";
+    document.getElementById("yay2").innerHTML = "Rolls are awesome!";
+    document.getElementById("yay2").style.visibility = "visible";
 }
