@@ -35,6 +35,9 @@ h3 {
     color: tan;
     text-align: center;
 }
+#yay{
+    visibility: hidden;
+}
 #pancakes {
     width: 400;
     height: 300;
