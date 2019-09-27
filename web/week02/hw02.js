@@ -1,9 +1,9 @@
 function pan() {
-    document.getElementById("yay") = "Go pancakes!";
+    document.getElementById("yay").value = "Go pancakes!";
 }
 function waf() {
-    document.getElementById("yay") = "We love waffles!";
+    document.getElementById("yay").value = "We love waffles!";
 }
 function muf() {
-    document.getElementById("yay") = "Muffins rock!";
+    document.getElementById("yay").value = "Muffins rock!";
 }
