@@ -1,27 +1,27 @@
 function pan() {
-    document.getElementById("yay").value = "Go pancakes!";
+    document.getElementById("yay").innerHTML = "Go pancakes!";
 }
 function waf() {
-    document.getElementById("yay").value = "We love waffles!";
+    document.getElementById("yay").innerHTML = "We love waffles!";
 }
 function muf() {
-    document.getElementById("yay").value = "Muffins rock!";
+    document.getElementById("yay").innerHTML = "Muffins rock!";
 }
 function cook() {
-    document.getElementById("yay").value = "Cookies are good for the soul!";
+    document.getElementById("yay").innerHTML = "Cookies are good for the soul!";
 }
 function bread() {
-    document.getElementById("yay").value = "Banana bread warms my heart!";
+    document.getElementById("yay").innerHTML = "Banana bread warms my heart!";
 }
 function scone() {
-    document.getElementById("yay").value = "Another scone please!";
+    document.getElementById("yay").innerHTML = "Another scone please!";
 }
 function whe() {
-    document.getElementById("yay").value = "Yum, wheat bread!";
+    document.getElementById("yay").innerHTML = "Yum, wheat bread!";
 }
 function bag() {
-    document.getElementById("yay").value = "Bagels are the bomb!";
+    document.getElementById("yay").innerHTML = "Bagels are the bomb!";
 }
 function roll() {
-    document.getElementById("yay").value = "Rolls are awesome!";
+    document.getElementById("yay").innerHTML = "Rolls are awesome!";
 }
