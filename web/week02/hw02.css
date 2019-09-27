@@ -3,16 +3,16 @@ body {
 }
 .solid {
     border-style: solid;
-    color: dodgerblue;
+    color:midnightblue;
     margin-left: auto;
     margin-right: auto;
 }
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: midnightblue;
+    color: teal;
     text-align: center;
     border-style: solid;
-    border-color: dodgerblue;
+    border-color:midnightblue;
     padding: 15px;
 }
 h2 {
@@ -22,12 +22,12 @@ h2 {
 }
 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: midnightblue;
+    color:  teal;
     text-align: center; 
 }
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: teal;
+    color: tan;
     text-align: center;
 }
 #pancakes {
@@ -47,4 +47,5 @@ h3 {
 footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: midnightblue;
+    text-align: center;
 }
