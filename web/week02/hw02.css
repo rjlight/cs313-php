@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background: blueSKy.jpg;
 }
 .solid {
     border-style: solid;
@@ -11,6 +11,8 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: midnightblue;
     text-align: center;
+    border-style: solid;
+    border-color: dodgerblue;;
 }
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
