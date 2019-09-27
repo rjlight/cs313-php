@@ -1,0 +1,42 @@
+body {
+    background-color: lightsteelblue;
+    align-content: center;
+}
+.solid {
+    border-style: solid;
+    color: dodgerblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: midnightblue;
+}
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: tan;
+}
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: saddlebrown; 
+}
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: teal;
+}
+#pancakes {
+    width: 200;
+    height: 300;
+}
+#waffles {
+    width: 600;
+    height: 300;
+}
+#muffins {
+    width: 250;
+    height: 300;
+}
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: midnightblue;
+}
