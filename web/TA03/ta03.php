@@ -10,4 +10,5 @@ is_array($_POST['continents']){
         {
             echo 'Checked: '.$value ;
         }
+}
 ?>
