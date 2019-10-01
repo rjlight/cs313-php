@@ -14,9 +14,9 @@ $continents = $_POST['continents'];
     $N = count($continents);
 
     echo("You selected $N continent: ");
-    for($i = 0; $i < $N; $i++)
-    {
-      echo($N. ": ". $continents[$i] . "<br>");
+
+    foreach($_POST['continents'] as $selected){
+    echo "You have selected: ". $selected."</br>";
     }
   }
 ?>
