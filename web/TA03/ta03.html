@@ -5,15 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body id="page">
-<form action="ta03.php" method="post"> 
-Name: <input type="text" id="name"> <br>
-Email: <input type="text" id="email"> <br>
-Major: <br>
-<input type="radio" name="CS"> Computer Science<br>
-<input type="radio" name="WDD"> Web Design and Development<br>
-<input type="radio" name="CIT"> Computer Information Technology<br>
-<input type="radio" name="CE"> Computer Engineering<br>
+
+<form action="ta03.php" method="post">
+Name: <input type="text" name="name" id="name"> <br>
+Email: <input type="text" name="email" id="email"> <br>
+Major:
+<input type="radio" name="major" id="CS"> Computer Science<br>
+<input type="radio" name="major" id="WDD"> Web Design and Development<br>
+<input type="radio" name="major" id="CIT"> Computer Information Technology<br>
+<input type="radio" name="major" id="CE"> Computer Engineering<br>
 Comments:<input type="text" name="comments"><br>
+Check the continents:
 <input type="checkbox" name="continents" value="North America"> North America<br>
 <input type="checkbox" name="continents" value="South America"> South America <br>
 <input type="checkbox" name="continents" value="Europe"> Europe <br>
@@ -21,6 +23,7 @@ Comments:<input type="text" name="comments"><br>
 <input type="checkbox" name="continents" value="Austrailia"> Austrailia <br>
 <input type="checkbox" name="continents" value="Africa"> Africa <br>
 <input type="checkbox" name="continents" value="Antarctica"> Antarctica <br>
+
 <input type="submit" value="Submit">
 </form>
 </div>
