@@ -38,13 +38,13 @@ div {
     font-family: 'Courier New', Courier, monospace;
     background-color:purple;
     color:white;
-    width:50px;
+    width:100px;
     height:20px;
 }
 #submit {
     font-family: 'Courier New', Courier, monospace;
     background-color:orangered;
     color:white;
-    width:50px;
+    width:100px;
     height:20px;
 }
