@@ -26,10 +26,10 @@
  // starting the session
  session_start();
 
- if (isset($_POST['Hat'])) { 
- $_SESSION['Hat'] = $_POST['Hat'];
+ //if (isset($_POST['Hat'])) { 
+ //$_SESSION['Hat'] = $_POST['Hat'];
  echo "<h4>Hat added to cart!</h4>"
- } 
+ //} 
 ?> 
 </body>
 </html>
