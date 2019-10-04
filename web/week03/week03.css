@@ -31,6 +31,7 @@ div {
     margin-right: auto;
     max-width: 100%;
     margin: 15px;
+    padding: 40px;
     text-align: left;
     border-color: darkolivegreen;
 }
@@ -45,6 +46,6 @@ div {
     font-family: 'Courier New', Courier, monospace;
     background-color:orangered;
     color:white;
-    width:150px;
+    width:170px;
     height:20px;
 }
