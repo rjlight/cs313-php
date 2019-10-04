@@ -10,13 +10,13 @@
 <form action="shoppingcart.php" method="post">
 <h3>Please select the number of each item desired: </h3><br>
 <center><div>
-    <input type="checkbox" name="items[]"value="Hat $15.99"> Hat $15.99<br>
+    <input type="checkbox" name="items[]"value="Hat $15.99"> Hat $15.99<br><br>
   <!--  <input type="button" class="button" value="Add items to cart" onclick="addItem(Hat)"><br><br>-->
-    <input type="checkbox" name="items[]" value="Scarf $13.99"> Scarf $13.99<br>
+    <input type="checkbox" name="items[]" value="Scarf $13.99"> Scarf $13.99<br><br>
    <!--  <input type="button" class="button" value="Add items to cart" onclick="addItem(Hat)"><br><br>-->
-    <input type="checkbox" name="items[]" value="Socks $9.99"> Socks $9.99<br>
+    <input type="checkbox" name="items[]" value="Socks $9.99"> Socks $9.99<br><br>
    <!--  <input type="button" class="button" value="Add items to cart" onclick="addItem(Hat)"><br><br>-->
-    <input type="checkbox" name="items[]" value="Hoodie $34.99"> Hoodie $34.99<br>
+    <input type="checkbox" name="items[]" value="Hoodie $34.99"> Hoodie $34.99<br><br>
    <!--  <input type="button" class="button" value="Add items to cart" onclick="addItem(Hat)"><br>-->
 </div></center>
 <input id="submit" type="submit" value="View my cart"></center>

@@ -8,7 +8,7 @@
 <center><h1 class="center">Shopping Cart</h1>
 <form action="checkout.php" method="post">
 <center><div>
-    <p>Items currently in your cart: <br>
+    Items currently in your cart: <br><br>
         
      <?php $items = $_POST['items'];
         if(empty($items)) 
@@ -19,7 +19,7 @@
         {
             $N = count($items);
 
-            echo("You selected $N items: <br>");
+            echo("You selected $N items: <br><br>");
 
             foreach($_POST['items'] as $selected){
             echo "You have selected: ". $selected."</br>";
