@@ -15,7 +15,7 @@ h1 {
 h2 {
     color: olivedrab;
 }
-h3 {
+h3, h4 {
     color: midnightblue;
 }
 form {
@@ -32,7 +32,7 @@ div {
     width: 450px;
     margin: 15px;
     padding: 70px;
-    text-align: left;
+    text-align: center;
     border-color: darkolivegreen;
 }
 .button {
