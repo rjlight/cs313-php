@@ -2,14 +2,15 @@ body {
     background-color: oldlace;
 }
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
     color: midnightblue;
 }
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
     color: olivedrab;
 }
 form {
-    font-family: Arial, Helvetica, sans-serif;
     color: midnightblue;
+}
+.center {
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
 }
