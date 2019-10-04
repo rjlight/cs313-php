@@ -24,7 +24,7 @@
             foreach($_POST['items'] as $selected){
             echo "You have selected: ". $selected."</br>";
             }
-        }
+        } ?>
 </div></center>
 <input id="button" type="button" value="Return to item page">
 <input id="submit" type="submit" value="Proceed to checkout"></center>
