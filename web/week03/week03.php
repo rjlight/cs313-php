@@ -30,7 +30,7 @@
  //   $_SESSION['items'] = $_POST['items'];
     echo "<center><h4>Hat added to cart!</h4></center>"
  //} else {
-     echo "<center><h4></h4></center>"
+   //  echo "<center><h4></h4></center>"
  //}
 ?> 
 </body>
