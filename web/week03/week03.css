@@ -33,6 +33,7 @@ div {
     margin: 15px;
     padding: 40px;
     text-align: left;
+    align-content: center;
     border-color: darkolivegreen;
 }
 .button {
