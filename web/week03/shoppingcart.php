@@ -9,10 +9,22 @@
 <form action="checkout.php" method="post">
 <center><div>
     <p>Items currently in your cart: <br>
-    <?php $_POST["hat"] ?>
-    <?php $_POST["scarf"] ?>
-    <?php $_POST["socks"] ?>
-    <?php $_POST["hoodie"] ?>
+        
+     <?php $items = $_POST['items'];
+        if(empty($items)) 
+        {
+            echo("You didn't select any items.");
+        } 
+        else
+        {
+            $N = count($items);
+
+            echo("You selected $N items: <br>");
+
+            foreach($_POST['items'] as $selected){
+            echo "You have selected: ". $selected."</br>";
+            }
+        }
 </div></center>
 <input id="button" type="button" value="Return to item page">
 <input id="submit" type="submit" value="Proceed to checkout"></center>
