@@ -1,14 +1,12 @@
 <html>
 <head>
-<title>Prove Assignment 03</title>
+<title>Prove Assignment 03 - Shopping Cart</title>
 <link rel="stylesheet" type="text/css" href="week03.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body id="page">
-<center><h1 class="center">Welcome to the University Bookstore</h1>
-<h2 class="center">Where you can find all your back-to-school necessities!</h2>
+<center><h1 class="center">Shopping Cart</h1>
 <form action="checkout.php" method="post">
-<h3>Please select the number of each item desired: </h3><br>
 <center><div>
     <p>Items currently in your cart: <br>
     <?php $_POST["hat"] ?>
