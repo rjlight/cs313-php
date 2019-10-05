@@ -11,7 +11,7 @@ session_start();
 <center><h1 class="center">Thank you for your order!</h1>
 <h2 class="center">Your items will be shipped out shortly</h2>
 <form action="<?php echo htmlspecialchars($_SERVER["confirmation.php"]);?>" method="post">
-<div>        
+<center><div>        
      <?php
         $_SESSION['address'] = $_POST['address'];
         $address = $_SESSION['address'];
@@ -33,7 +33,7 @@ session_start();
             echo $selected ."</br>";
             }
         } ?>
-</div>
+</div></center>
 <input id="submit" type="submit" value="Place order">
 </form>
 <h3>Please send an email to university.support@email.edu for any questions!</h3></center>
