@@ -26,7 +26,7 @@ session_start();
   if(empty($remove)) {
   } else {
     foreach($remove as $r){ 
-      foreach($_SESSIONT['items'] as $selected) {
+      foreach($_SESSION['items'] as $selected) {
         if($selected == $r) {
           $selected = "";
         } 
