@@ -34,6 +34,6 @@
 </div></center>
 <input id="submit" type="submit" value="Place order"></center>
 </form>
-<h3>Please send an email to university.support@email.edu for any questions!</h3>
+<h3>Please send an email to university.support@email.edu for any questions!</h3></center>
 </body>
 </html>
