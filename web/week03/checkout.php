@@ -10,7 +10,7 @@
 <form action="confirmation.php" method="post">
 <center><div>
   <p>Shipping address:</p>
-  <textarea name="address" rows="4" cols="50"></textarea><br>
+  <textarea name="address" rows="4" cols="10"></textarea><br>
 </div></center>
 <a id="button" href="shoppingcart.php">Back to shopping cart</a>
 <input id="submit" type="submit" value="Place order"></center>
