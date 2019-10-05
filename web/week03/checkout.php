@@ -30,6 +30,7 @@ session_start();
       for($i = 0; $i < sizeof($items); $i++) {
         if($items[i] == $r) {
           $items[i] = "";
+          echo $items[i];
         } 
       }
     }
