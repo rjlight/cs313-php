@@ -23,7 +23,6 @@ session_start();
 <?php
   $remove = $_POST['removeItems'];
   $items = $_SESSION['items'];
-  echo($remove[0]);
   if(empty($remove)) {
   } else {
     foreach($remove as $r){ 
