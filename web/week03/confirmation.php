@@ -13,7 +13,7 @@
         $address = $_SESSION['address'];
         $items = $_SESSION['items'];
 
-        echo("This is your shipping address:</br>")
+        echo("This is your shipping address:</br>");
         echo $address. "<br>";
         if(empty($items)) 
         {
