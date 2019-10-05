@@ -14,7 +14,7 @@
         $items = $_SESSION['items'];
 
         echo("This is your shipping address:</br>");
-        echo $address. "<br>";
+        echo $address. "<br><br>";
         if(empty($items)) 
         {
             echo("You didn't select any items.");

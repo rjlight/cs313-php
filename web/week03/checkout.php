@@ -17,3 +17,16 @@
 </form>
 </body>
 </html>
+<?php
+  $remove = $_POST['removeItems'];
+  if(empty($remove)) {
+  } else {
+    foreach($remove as $r){
+      foreach($_POST['removeItems'] as $selected) {
+        if($selected == $r) {
+          $selected = "";
+        } 
+      }
+    }
+  }
+?>

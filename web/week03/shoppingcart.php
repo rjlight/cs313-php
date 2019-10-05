@@ -23,11 +23,12 @@
 
             echo("You selected $N items: <br><br>");
 
-            foreach($_POST['items'] as $selected){
+            foreach($items as $selected){
             echo "<input type=\"checkbox\" name=\"removeItems[]\"value=\"" . $selected ."\">" . $selected ."</br>";
             }
             echo("<br>Please check the box next to each item if you would like to remove it from your cart.");
-        } ?>
+        } 
+        ?>
 </div></center>
 <a id="button" href="week03.php">Return to item page</a>
 <input id="submit" type="submit" value="Proceed to checkout"></center>
