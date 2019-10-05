@@ -6,10 +6,9 @@
 </head>
 <body id="page">
 <center><h1 class="center">Shopping Cart</h1>
+<h2>Items currently in your cart: </h2><br><br>
 <form action="checkout.php" method="post">
-<center><div>
-    Items currently in your cart: <br><br>
-        
+<center><div>        
      <?php
         $items = $_POST['items'];
         if(empty($items)) 
