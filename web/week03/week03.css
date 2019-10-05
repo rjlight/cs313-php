@@ -44,6 +44,7 @@ div {
     color:white;
     width:170px;
     height:20px;
+    padding: 2px;
 }
 #submit {
     font-family: 'Courier New', Courier, monospace;
@@ -51,4 +52,5 @@ div {
     color:white;
     width:170px;
     height:20px;
+    padding: 2px;
 }
