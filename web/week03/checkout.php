@@ -27,7 +27,7 @@ session_start();
   if(empty($remove)) {
   } else {
     foreach($remove as $r){ 
-      for($i = 0; $i < sizeof($items); $i++ {
+      for($i = 0; $i < sizeof($items); $i++) {
         if($items[i] == $r) {
           $items[i] = "";
         } 
