@@ -33,5 +33,6 @@ session_start();
         } 
       }
     }
+    $_SESSION['items'] = $items;
   }
 ?>
