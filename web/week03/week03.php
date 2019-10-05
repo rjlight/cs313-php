@@ -12,7 +12,7 @@ session_start();
 <center><h1 class="center">Welcome to the University Bookstore</h1>
 <h2 class="center">Where you can find all your back-to-school necessities!</h2>
 <form action="shoppingcart.php" method="post">
-<h3>Please select an item to add it to the cart: </h3><br>
+<h3>Please select an item to add it to the cart: </h3>
 <center><div>
     <input type="checkbox" name="items[]"value="Hat $15.99"> Hat $15.99<br><br>
   <!--  <input type="button" class="button" value="Add items to cart" onclick="addItem(Hat)"><br><br>-->

@@ -22,6 +22,7 @@ session_start();
 </html>
 <?php
   $remove = $_POST['removeItems'];
+  echo($remove[0]);
   if(empty($remove)) {
   } else {
     foreach($remove as $r){ 

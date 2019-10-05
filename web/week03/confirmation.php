@@ -30,7 +30,7 @@ session_start();
             echo("You are ordering $N items: <br><br>");
 
             foreach($items as $selected){
-            echo $selected ."<br>";
+            echo $selected ."<br><br>";
             }
         } ?>
 </div></center>

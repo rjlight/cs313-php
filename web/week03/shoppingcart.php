@@ -29,7 +29,7 @@ session_start();
             foreach($items as $selected){
             echo "<input type=\"checkbox\" name=\"removeItems[]\"value=\"" . $selected ."\">" . $selected ."<br><br>";
             }
-            echo("<br>Please check the box next to each item if you would like to remove it from your cart.");
+            echo("<br>If you would like to remove an item from your cart, please check the box.");
         } 
         ?>
 </div></center>
