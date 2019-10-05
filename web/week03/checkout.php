@@ -7,7 +7,7 @@
 <body id="page">
 <center><h1 class="center">Checkout</h1>
 <h2 class="center">Please enter shipping address information below:</h2>
-<form action="confirmation.php" method="post">
+<form action="<?php echo htmlspecialchars($_SERVER["confirmation.php"]);?>" method="post">
 <center><div>
   <p>Shipping address:</p>
   <textarea name="address" rows="4" cols="40"></textarea><br>
