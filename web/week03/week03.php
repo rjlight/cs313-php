@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 <html>
 <head>
 <title>Prove Assignment 03</title>
@@ -23,3 +27,9 @@
 </form>
 </body>
 </html>
+<?php
+// Set session variables
+$_SESSION["favcolor"] = "green";
+$_SESSION["favanimal"] = "cat";
+echo "Session variables are set.";
+?>

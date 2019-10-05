@@ -6,11 +6,13 @@
 </head>
 <body id="page">
 <center><h1 class="center">Shopping Cart</h1>
-<h2>Items currently in your cart: </h2><br><br>
+<h2>Items currently in your cart: </h2>
 <form action="checkout.php" method="post">
 <center><div>        
      <?php
-        $items = $_POST['items'];
+        $_SESSION['items'] = $_POST['items'];
+        $items = $_SESSION['items'];
+
         if(empty($items)) 
         {
             echo("You didn't select any items.");
