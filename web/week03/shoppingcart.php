@@ -25,7 +25,7 @@
             foreach($_POST['items'] as $selected){
             echo "<input type=\"checkbox\" name=\"removeItems[]\"value=\"" . $selected ."\">" . $selected ."</br>";
             }
-            echo("Please check the box next to each item if you would like to remove it from your cart. ")
+            echo("Please check the box next to each item if you would like to remove it from your cart.");
         } ?>
 </div></center>
 <a id="button" href="week03.php">Return to item page</a>
