@@ -29,8 +29,8 @@ session_start();
 
             echo("You are ordering $N items: <br><br>");
 
-            foreach($_POST['items'] as $selected){
-            echo $selected ."</br>";
+            foreach($items as $selected){
+            echo $selected ."<br>";
             }
         } ?>
 </div></center>
