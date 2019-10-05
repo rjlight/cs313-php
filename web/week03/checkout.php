@@ -22,13 +22,14 @@ session_start();
 </html>
 <?php
   $remove = $_POST['removeItems'];
+  $items = $_SESSION['items'];
   echo($remove[0]);
   if(empty($remove)) {
   } else {
     foreach($remove as $r){ 
-      foreach($_SESSION['items'] as $selected) {
-        if($selected == $r) {
-          $selected = "";
+      for($i = 0; $i < sizeof($items); $i++ {
+        if($items[i] == $r) {
+          $items[i] = "";
         } 
       }
     }
