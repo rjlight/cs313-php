@@ -8,7 +8,7 @@
 <center><h1 class="center">Welcome to the University Bookstore</h1>
 <h2 class="center">Where you can find all your back-to-school necessities!</h2>
 <form action="shoppingcart.php" method="post">
-<h3>Please select the number of each item desired: </h3><br>
+<h3>Please select an item to add it to the cart: </h3><br>
 <center><div>
     <input type="checkbox" name="items[]"value="Hat $15.99"> Hat $15.99<br><br>
   <!--  <input type="button" class="button" value="Add items to cart" onclick="addItem(Hat)"><br><br>-->
@@ -21,17 +21,5 @@
 </div></center>
 <input id="submit" type="submit" value="View my cart"></center>
 </form>
-<?php 
-
- // starting the session
- session_start();
-
- //if (isset($_POST['items'])) { 
- //   $_SESSION['items'] = $_POST['items'];
-    echo "<center><h4>Hat added to cart!</h4></center>"
- //} else {
-   //  echo "<center><h4></h4></center>"
- //}
-?> 
 </body>
 </html>

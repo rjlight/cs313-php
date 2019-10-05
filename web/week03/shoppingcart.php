@@ -10,7 +10,8 @@
 <center><div>
     Items currently in your cart: <br><br>
         
-     <?php $items = $_POST['items'];
+     <?php
+        $items = $_POST['items'];
         if(empty($items)) 
         {
             echo("You didn't select any items.");
@@ -22,11 +23,12 @@
             echo("You selected $N items: <br><br>");
 
             foreach($_POST['items'] as $selected){
-            echo "You have selected: ". $selected."</br>";
+            echo "<input type=\"checkbox\" name=\"removeItems[]\"value=\"" . $selected ."\">" . $selected ."</br>";
             }
+            echo("Please check the box next to each item if you would like to remove it from your cart. ")
         } ?>
 </div></center>
-<input id="button" type="button" value="Return to item page">
+<a id="button" href="week03.php">Return to item page</a>
 <input id="submit" type="submit" value="Proceed to checkout"></center>
 </form>
 </body>

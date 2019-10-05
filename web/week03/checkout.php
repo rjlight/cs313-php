@@ -12,7 +12,7 @@
   <p>Shipping address:</p>
   <input type="text" name="comments"><br>
 </div></center>
-<input id="button" type="button" value="Return to shopping cart">
+<a id="button" href="shoppingcart.php">Back to shopping cart</a>
 <input id="submit" type="submit" value="Place order"></center>
 </form>
 </body>
