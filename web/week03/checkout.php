@@ -24,8 +24,8 @@ session_start();
   $remove = $_POST['removeItems'];
   if(empty($remove)) {
   } else {
-    foreach($remove as $r){
-      foreach($_POST['removeItems'] as $selected) {
+    foreach($remove as $r){ 
+      foreach($_SESSIONT['items'] as $selected) {
         if($selected == $r) {
           $selected = "";
         } 

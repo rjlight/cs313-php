@@ -44,7 +44,6 @@ div {
     color:white;
     width:170px;
     height:20px;
-    padding: 15px 25px;
     display: inline-block;
 }
 #submit {
@@ -53,5 +52,4 @@ div {
     color:white;
     width:170px;
     height:20px;
-    padding: 15px 25px;
 }
