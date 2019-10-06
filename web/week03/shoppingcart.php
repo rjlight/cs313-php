@@ -13,7 +13,7 @@ session_start();
 <form action="checkout.php" method="post">
 <center><div>        
      <?php
-        $_SESSION['items'] = $_POST['items'];
+        //$_SESSION['items'] = $_POST['items'];
         $items = $_SESSION['items'];
 
         if(empty($items)) 
