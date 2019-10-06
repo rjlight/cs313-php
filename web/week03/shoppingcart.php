@@ -33,7 +33,7 @@ session_start();
         } 
         ?>
 </div></center>
-<a id="button" href="week03.php">Return to item page</a>
+<a id="button" href="javascript:history.go(-1)">Return to item page</a>
 <input id="submit" type="submit" value="Proceed to checkout"></center>
 </form>
 </body>

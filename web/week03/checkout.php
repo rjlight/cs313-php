@@ -15,7 +15,7 @@ session_start();
   <p>Shipping address:</p>
   <textarea name="address" rows="4" cols="40"></textarea><br>
 </div></center>
-<a id="button" href="shoppingcart.php">Back to shopping cart</a>
+<a id="button" href="javascript:history.go(-1)">Back to shopping cart</a>
 <input id="submit" type="submit" value="Confirm order"></center>
 </form>
 </body>
