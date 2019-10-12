@@ -35,9 +35,3 @@ VALUES ('Leah Light', 14, 'violin', 'Yes, 4 years', 'Monday', '3:30 PM');
 
 INSERT INTO parent (name, email, phone_number, best_form_contact) 
 VALUES ('Marie Light', 'fakeemail@gmail.com', 333-333-9333, 'texting, please');
-
-id                 SERIAL NOT NULL PRIMARY KEY,
-name               varchar(30) NOT NULL,
-email              varchar(50) NOT NULL,
-phone_number       int NOT NULL,
-best_form_contact  varchar(20) NOT NULL
