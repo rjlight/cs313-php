@@ -35,3 +35,6 @@ VALUES ('Leah Light', 14, 'violin', 'Yes, 4 years', 'Monday', '3:30 PM');
 
 INSERT INTO parent (name, email, phone_number, best_form_contact) 
 VALUES ('Marie Light', 'fakeemail@gmail.com', 333-333-9333, 'texting, please');
+
+UPDATE account
+SET student_id_2=3; 
