@@ -38,3 +38,10 @@ VALUES ('Marie Light', 'fakeemail@gmail.com', 333-333-9333, 'texting, please');
 
 UPDATE account
 SET student_id_2=3; 
+
+//to join the account table and show the students name
+SELECT s.name FROM student as s
+JOIN account AS a
+ON s.id = a.student_id_1
+OR s.id = a.student_id_2
+WHERE a.username = 'lightclan';
