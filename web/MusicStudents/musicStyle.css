@@ -4,6 +4,13 @@
     background-color: ivory;
     background-size: cover;
     opacity: 0.6;
+    border-style: solid;
+    border-color: slategray;
+    height: 640px;
+    width: 420px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .center {
     margin-left: auto;
