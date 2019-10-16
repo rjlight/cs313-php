@@ -7,10 +7,11 @@
 <body id="page">
 <div class="border">
     <h1 class="center">Please sign-in to your account:</h1>
-    <form action="listAccountNames.php" method="post">
+    <form action="AccountInfo.php" method="post">
     <div class="input">
         Username: <input type="text" name="username"><br><br>
         Password:  <input type="text" name="password"><br><br>
+        <p>Don't have an account yet? Make one <a href="editAccount.php">here</a></p>
     </div>
     <input id="submit" type="submit" value="Sign-In">
     </form>
