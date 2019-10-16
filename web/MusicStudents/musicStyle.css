@@ -1,5 +1,7 @@
 #page {
     background-image: url(pianoBackground.jpg);
+    background-repeat: no-repeat;
+    background-color: ivory;
     opacity: 0.6;
 }
 .center {
@@ -10,10 +12,11 @@
     margin-left: auto;
     margin-right: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: cadetblue;
+    color: black;
 }
 #submit {
-    color: darkmagenta;
+    color: white;
+    background-color: teal;
     margin-left: auto;
     margin-right: auto;
 }
