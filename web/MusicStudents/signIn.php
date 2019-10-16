@@ -10,7 +10,7 @@
     <form action="listAccountNames.php" method="post">
     <div class="input">
         Username: <input type="text" name="username"><br><br>
-        Password: <input type="text" name="password"><br><br>
+        Password:  <input type="text" name="password"><br><br>
     </div>
     <input id="submit" type="submit" value="Sign-In">
     </form>
