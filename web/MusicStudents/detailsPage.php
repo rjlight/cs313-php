@@ -52,7 +52,7 @@ session_start();
             echo '<p>Best form of contact: <br>' . $row['best_form_contact'] .'</p>';
             echo '<br><br>';
         }
-        $parentID2 = $_SESSION['parent_id_2'];
+        /*$parentID2 = $_SESSION['parent_id_2'];
 
         foreach ($db->query('SELECT name, email, phone_number, best_form_contact 
             FROM parent WHERE id =' . '\''. $parentID2 . '\'') as $row)
@@ -116,7 +116,7 @@ session_start();
             echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
             echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             echo '<br><br>';
-        } 
+        } */
     ?>
     </form>
 </div>
