@@ -18,8 +18,7 @@
         Would you like to add another parent? <br>
         Yes <input type="checkBox" name="parent2" onclick="checkParent()"> <br> 
 
-        <div id="parent2">
-        </div>
+        <p id="parent2"></p>
         <h3>Student Information</h3>
         Full Name: <input type="text" name="studentName1"><br><br>
         Age: <input type="number" name="age1"><br><br>
