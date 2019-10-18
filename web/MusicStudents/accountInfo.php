@@ -37,7 +37,7 @@
         $password = $_POST['password'];
 
         foreach ($db->query('SELECT parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
-            FROM account WHERE username =' . '\''. $username . '\'' AND password =' . '\''. $password . '\'') as $row)
+            FROM account WHERE username =' . '\''. $username . '\' AND password =' . '\''. $password . '\'') as $row)
         {
             echo '<p>Username: ' . $username .'</p>';
             echo '<input id=\"submit\" type=\"submit\" value=\"See Details\">';
