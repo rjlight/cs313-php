@@ -20,7 +20,7 @@
     border-color: slategray;
     width: 420px;
     padding: 50px;
-    margin-top: 120px;
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -45,4 +45,7 @@ h3 {
 }
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#parent2, #student2, #student3, #student4 {
+    font-size: .001px;
 }

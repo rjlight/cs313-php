@@ -78,7 +78,7 @@ session_start();
             foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
                 FROM student WHERE id =' . '\''. $studentID2 . '\'') as $row)
             {
-                echo '<h3>First Student Information:</h3>';
+                echo '<h3>Second Student Information:</h3>';
                 echo '<p>Name: ' . $row['name'] .'</p>';
                 echo '<p>Age: ' . $row['age'] .'</p>';
                 echo '<p>Instrument: ' . $row['instrument'] .'</p>';
@@ -91,7 +91,7 @@ session_start();
             foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
                 FROM student WHERE id =' . '\''. $studentID3 . '\'') as $row)
             {
-                echo '<h3>First Student Information:</h3>';
+                echo '<h3>Third Student Information:</h3>';
                 echo '<p>Name: ' . $row['name'] .'</p>';
                 echo '<p>Age: ' . $row['age'] .'</p>';
                 echo '<p>Instrument: ' . $row['instrument'] .'</p>';
@@ -104,7 +104,7 @@ session_start();
             foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
                 FROM student WHERE id =' . '\''. $studentID4 . '\'') as $row)
             {
-                echo '<h3>First Student Information:</h3>';
+                echo '<h3>Fourth Student Information:</h3>';
                 echo '<p>Name: ' . $row['name'] .'</p>';
                 echo '<p>Age: ' . $row['age'] .'</p>';
                 echo '<p>Instrument: ' . $row['instrument'] .'</p>';
