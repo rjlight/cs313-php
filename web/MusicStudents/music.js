@@ -23,7 +23,7 @@ function checkStudent() { //to add an edit field for additional students
     else {
         document.getElementById("student3").innerHTML = "";
     }
-    if (document.getElementsByName("student4")[0]checked == true) {
+    if (document.getElementsByName("student4")[0].checked == true) {
         txt = "<h3>Fourth Student Information</h3> Full Name: <input type=\"text\" name=\"studentName4\"><br><br> Age: <input type=\"number\" name=\"age4\"><br><br> Instrument: <input type=\"text\" name=\"instrument4\"><br><br> Have you had lessons before? If yes, for how long? <br> <input type=\"text\" name=\"lessonsBefore4\"><br><br> Lesson Day: <input type=\"text\" name=\"lessonDay4\"><br><br> Lesson Time: <input type=\"text\" name=\"lessonTime4\"><br>";
         document.getElementById("student4").innerHTML = txt;
     }
