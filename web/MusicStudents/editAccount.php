@@ -27,8 +27,8 @@
         <input type="text" name="lessonsBefore1"><br><br>
         Lesson Day: <input type="text" name="lessonDay1"><br><br>
         Lesson Time: <input type="text" name="lessonTime1"><br><br>
-        Would you like to add another student? <br>
-        Yes <input type="checkBox" name="student2" onclick="checkStudent()"> <br>
+        Click to add another student: <br>
+        <input type="button" name="student2" onclick="checkStudent()" value="Add Student"> <br>
         <div id="student2">
         </div>
         <div id="student3">
