@@ -46,11 +46,3 @@ h3 {
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#parent2 {
-    size: .001px;
-    visibility: hidden;
-}
-#student2, #student3, #student4 {
-    size: .001px;
-    visibility: hidden;
-}
