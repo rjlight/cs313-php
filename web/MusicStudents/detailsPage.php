@@ -32,7 +32,7 @@
             die();
         }
 
-        $parentID = $_POST['parent_id_1'];
+        $parentID = $_SESSION['parent_id_1'];
 
         foreach ($db->query('SELECT name, email, phone_number, best_form_contact 
             FROM parent WHERE id =' . '\''. $parentID . '\'') as $row)
@@ -44,7 +44,7 @@
             echo '<p>Best form of contact: <br>' . $row['best_form_contact'] .'</p>';
             echo '<br><br>';
         }
-        $parentID2 = $_POST['parent_id_2'];
+        $parentID2 = $_SESSION['parent_id_2'];
 
         foreach ($db->query('SELECT name, email, phone_number, best_form_contact 
             FROM parent WHERE id =' . '\''. $parentID2 . '\'') as $row)
@@ -57,7 +57,7 @@
             echo '<br><br>';
         }
 
-        $studentID1 = $_POST['student_id_1'];
+        $studentID1 = $_SESSION['student_id_1'];
 
         foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
             FROM student WHERE id =' . '\''. $studentID1 . '\'') as $row)
@@ -70,7 +70,7 @@
             echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' $row['lesson_time'] .'</p>';
             echo '<br><br>';
         }
-        $studentID2 = $_POST['student_id_2'];
+        $studentID2 = $_SESSION['student_id_2'];
 
         foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
             FROM student WHERE id =' . '\''. $studentID2 . '\'') as $row)
@@ -83,7 +83,7 @@
             echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' $row['lesson_time'] .'</p>';
             echo '<br><br>';
         }
-        $studentID3 = $_POST['student_id_3'];
+        $studentID3 = $_SESSION['student_id_3'];
 
         foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
             FROM student WHERE id =' . '\''. $studentID3 . '\'') as $row)
@@ -96,7 +96,7 @@
             echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' $row['lesson_time'] .'</p>';
             echo '<br><br>';
         }
-        $studentID4 = $_POST['student_id_4'];
+        $studentID4 = $_SESSION['student_id_4'];
 
         foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
             FROM student WHERE id =' . '\''. $studentID4 . '\'') as $row)
