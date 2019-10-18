@@ -1,14 +1,14 @@
-#page1 {
+#pageOne {
     background-image: url(pianoBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#page2 {
+#pageTwo {
     background-image: url(piano.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#page3 {
+#pageThree {
     background-image: url(violin.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
