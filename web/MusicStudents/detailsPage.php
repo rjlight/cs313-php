@@ -93,7 +93,7 @@
             echo '<p>Age: ' . $row['age'] .'</p>';
             echo '<p>Instrument: ' . $row['instrument'] .'</p>';
             echo '<p>Have you had lessons before <br>' . $row['lesson_before'] .'</p>';
-            echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' $row['lesson_time'] .'</p>';
+            echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             echo '<br><br>';
         }
         $studentID4 = $_SESSION['student_id_4'];
