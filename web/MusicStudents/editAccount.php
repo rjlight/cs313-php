@@ -3,6 +3,7 @@
 <title>Edit Account - Music Students</title>
 <link rel="stylesheet" type="text/css" href="musicStyle.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<script src="music.js"></script>
 </head>
 <body id="pageTwo">
 <div class="border">
