@@ -12,7 +12,7 @@ CREATE TABLE parent (
 id                 SERIAL NOT NULL PRIMARY KEY,
 name               varchar(30) NOT NULL,
 email              varchar(50) NOT NULL,
-phone_number       int NOT NULL,
+phone_number       varchar(15) NOT NULL,
 best_form_contact  varchar(20) NOT NULL
 );
 
@@ -37,7 +37,7 @@ INSERT INTO parent (name, email, phone_number, best_form_contact)
 VALUES ('Marie Light', 'fakeemail@gmail.com', 333-333-9333, 'texting, please');
 
 UPDATE account
-SET student_id_2=3; 
+SET student_id_3=3; 
 
 UPDATE parent
 SET phone_number=;
@@ -59,6 +59,10 @@ WHERE id=2;
 select constraint_name
   from all_cons_columns
  where phone_number = -4487;
+
+Select constraint_name, constraint_type
+from user_constraints
+where table_name = 'TABLE';
 
 <?php
 echo '<h1><strong>Scripture Resources</strong></h1>';
