@@ -16,7 +16,7 @@
         Best Form of Contact (email, text, phone call, etc.): <br>
             <input type="text" name="contact"><br><br>
         Would you like to add another parent? <br>
-        Yes <input type="checkBox" name="parent2" onclick="checkParent()"> <br> 
+        Yes <input type="checkBox" id="parent2" onclick="checkParent()"> <br> 
 
         <p id="parent2"></p>
         <h3>Student Information</h3>

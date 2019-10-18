@@ -1,5 +1,5 @@
 function checkParent() { //to add an edit field for additional parents
-    if (document.getElementsByName("parent2").checked == true) {
+    if (document.getElementById("parent2").checked == true) {
         var txt = "<h3>Second Parent Information</h3> Full Name: <input type=\"text\" name=\"parentName2\"><br><br> Email Address: <input type=\"text\" name=\"email2\"><br><br> Phone Number: <input type=\"number\" name=\"phoneNumber2\"><br><br> Best Form of Contact (email, text, phone call, etc.): <br> <input type=\"text\" name=\"contact2\"><br><br>";
         document.getElementById("parent2").innerHTML = txt;
     }
