@@ -40,13 +40,13 @@
             FROM account WHERE username =' . '\''. $username . '\'' AND password =' . '\''. $password . '\'') as $row)
         {
             echo '<p>Username: ' . $username .'</p>';
-            echo '<input id="submit" type="submit" value="See Details">';
-            $row['parent_id_1'] = $_SESSION['parent_id_1'];
-            $row['parent_id_2'] = $_SESSION['parent_id_2'];
-            $row['student_id_1'] = $_SESSION['student_id_1'];
-            $row['student_id_2'] = $_SESSION['student_id_2'];
-            $row['student_id_3'] = $_SESSION['student_id_3'];
-            $row['student_id_4'] = $_SESSION['student_id_4'];
+            echo '<input id=\"submit\" type=\"submit\" value=\"See Details\">';
+            $_SESSION['parent_id_1'] = $row['parent_id_1'];
+            $_SESSION['parent_id_2'] = $row['parent_id_2'];
+            $_SESSION['student_id_1'] = $row['student_id_1'];
+            $_SESSION['student_id_2'] = $row['student_id_2'];
+            $_SESSION['student_id_3'] = $row['student_id_3'];
+            $_SESSION['student_id_4'] = $row['student_id_4'];
         }
     ?>
     </form>
