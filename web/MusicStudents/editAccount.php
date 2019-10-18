@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="musicStyle.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
-<body id="page">
+<body id="page2">
 <div class="border">
     <h1 class="center">Please fill out all fields:</h1>
     <form action="" method="post">

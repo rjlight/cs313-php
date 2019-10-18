@@ -7,7 +7,7 @@ session_start();
 <link rel="stylesheet" type="text/css" href="musicStyle.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
-<body id="page">
+<body id="page3">
 <div class="border">
     <h1 class="center">Account Details:</h1>
     <!--will have sections for parents and students-->

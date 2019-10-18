@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="musicStyle.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
-<body id="page">
+<body id="page1">
 <div class="border">
     <h1 class="center">Account Information:</h1>
     <form action="detailsPage.php" method="post">
