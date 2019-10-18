@@ -8,7 +8,7 @@ session_start();
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body id="pageThree">
-<div class="border">
+<div class="borderLong">
     <h1 class="center">Account Details:</h1>
     <!--will have sections for parents and students-->
     <form action="" method="post">
