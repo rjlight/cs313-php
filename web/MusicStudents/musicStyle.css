@@ -47,5 +47,6 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #parent2, #student2, #student3, #student4 {
-    font-size: .001px;
+    size: .001px;
+    visibility: hidden;
 }
