@@ -34,7 +34,7 @@ session_start();
             echo 'Error!: ' . $ex->getMessage();
             die();
         }
-        
+
         $parentID = $_SESSION['parent_id_1'];
 
         foreach ($db->query('SELECT name, email, phone_number, best_form_contact 
@@ -45,7 +45,6 @@ session_start();
             echo '<p>Email: ' . $row['email'] .'</p>';
             echo '<p>Phone Number: ' . $row['phone_number'] .'</p>';
             echo '<p>Best form of contact: <br>' . $row['best_form_contact'] .'</p>';
-            echo '<br><br>';
         }
         $parentID2 = $_SESSION['parent_id_2'];
 
@@ -58,7 +57,6 @@ session_start();
                 echo '<p>Email: ' . $row['email'] .'</p>';
                 echo '<p>Phone Number: ' . $row['phone_number'] .'</p>';
                 echo '<p>Best form of contact: <br>' . $row['best_form_contact'] .'</p>';
-                echo '<br><br>';
             }
         }
 
@@ -73,7 +71,6 @@ session_start();
             echo '<p>Instrument: ' . $row['instrument'] .'</p>';
             echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
             echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
-            echo '<br><br>';
         }
         $studentID2 = $_SESSION['student_id_2'];
         
@@ -87,7 +84,6 @@ session_start();
                 echo '<p>Instrument: ' . $row['instrument'] .'</p>';
                 echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
                 echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
-                echo '<br><br>';
             }
         }
         $studentID3 = $_SESSION['student_id_3'];
@@ -101,7 +97,6 @@ session_start();
                 echo '<p>Instrument: ' . $row['instrument'] .'</p>';
                 echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
                 echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
-                echo '<br><br>';
             }
         }
         $studentID4 = $_SESSION['student_id_4'];
@@ -115,7 +110,6 @@ session_start();
                 echo '<p>Instrument: ' . $row['instrument'] .'</p>';
                 echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
                 echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
-                echo '<br><br>';
             }
         }
     ?>

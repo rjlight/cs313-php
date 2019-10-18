@@ -39,6 +39,12 @@ VALUES ('Marie Light', 'fakeemail@gmail.com', 333-333-9333, 'texting, please');
 UPDATE account
 SET student_id_2=3; 
 
+UPDATE parent
+SET phone_number=;
+
+ALTER TABLE parent 
+MODIFY (phone_number VARCHAR(13) NOT NULL);
+
 //to join the account table and show the students name
 SELECT s.name FROM student as s
 JOIN account AS a
@@ -49,6 +55,10 @@ WHERE a.username = 'lightclan';
 UPDATE student
 SET lesson_time='4:30 PM'
 WHERE id=2;
+
+select constraint_name
+  from all_cons_columns
+ where phone_number = -4487;
 
 <?php
 echo '<h1><strong>Scripture Resources</strong></h1>';
