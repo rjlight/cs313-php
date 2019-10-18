@@ -6,7 +6,7 @@
 </head>
 <body id="page">
 <div class="border">
-    <h1 class="center">Please fill out all required fields:</h1>
+    <h1 class="center">Please fill out all fields:</h1>
     <form action="" method="post">
         <h3>Parent Information</h3>
         Full Name: <input type="text" name="name"><br><br>
