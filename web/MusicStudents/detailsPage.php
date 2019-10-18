@@ -8,7 +8,7 @@ session_start();
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body id="page">
-<div class="borderLong">
+<div class="border">
     <h1 class="center">Account Details:</h1>
     <!--will have sections for parents and students-->
     <form action="" method="post">
@@ -64,7 +64,7 @@ session_start();
             echo '<br><br>';
         }
 
-       /* $studentID1 = $_SESSION['student_id_1'];
+        $studentID1 = $_SESSION['student_id_1'];
 
         foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
             FROM student WHERE id =' . '\''. $studentID1 . '\'') as $row)
@@ -115,7 +115,7 @@ session_start();
             echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
             echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             echo '<br><br>';
-        } */
+        }
     ?>
     </form>
 </div>
