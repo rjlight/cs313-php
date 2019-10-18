@@ -66,8 +66,8 @@
             echo '<p>Name: ' . $row['name'] .'</p>';
             echo '<p>Age: ' . $row['age'] .'</p>';
             echo '<p>Instrument: ' . $row['instrument'] .'</p>';
-            echo '<p>Have you had lessons before <br>' . $row['lesson_before'] .'</p>';
-            echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' $row['lesson_time'] .'</p>';
+            echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
+            echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             echo '<br><br>';
         }
         $studentID2 = $_SESSION['student_id_2'];
@@ -79,8 +79,8 @@
             echo '<p>Name: ' . $row['name'] .'</p>';
             echo '<p>Age: ' . $row['age'] .'</p>';
             echo '<p>Instrument: ' . $row['instrument'] .'</p>';
-            echo '<p>Have you had lessons before <br>' . $row['lesson_before'] .'</p>';
-            echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' $row['lesson_time'] .'</p>';
+            echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
+            echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             echo '<br><br>';
         }
         $studentID3 = $_SESSION['student_id_3'];
@@ -92,7 +92,7 @@
             echo '<p>Name: ' . $row['name'] .'</p>';
             echo '<p>Age: ' . $row['age'] .'</p>';
             echo '<p>Instrument: ' . $row['instrument'] .'</p>';
-            echo '<p>Have you had lessons before <br>' . $row['lesson_before'] .'</p>';
+            echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
             echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             echo '<br><br>';
         }
@@ -105,8 +105,8 @@
             echo '<p>Name: ' . $row['name'] .'</p>';
             echo '<p>Age: ' . $row['age'] .'</p>';
             echo '<p>Instrument: ' . $row['instrument'] .'</p>';
-            echo '<p>Have you had lessons before <br>' . $row['lesson_before'] .'</p>';
-            echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' $row['lesson_time'] .'</p>';
+            echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
+            echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             echo '<br><br>';
         }
     ?>
