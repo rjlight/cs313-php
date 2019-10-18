@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body id="pageTwo">
-<div class="borderLong">
+<div class="long">
     <h1 class="center">Please fill out all fields:</h1>
     <form action="" method="post">
         <h3>Parent Information</h3>
