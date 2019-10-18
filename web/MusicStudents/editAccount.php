@@ -13,7 +13,7 @@
         Email Address: <input type="text" name="email"><br><br>
         Phone Number: <input type="number" name="phoneNumber"><br><br>
         Best Form of Contact (email, text, phone call, etc.): <br>
-            <input type="text" name="contact"><br><br><br>
+            <input type="text" name="contact"><br><br>
         Would you like to add another parent? <br>
         Yes <input type="checkBox" name="parent2" onclick="checkParent()"> <br> 
 
