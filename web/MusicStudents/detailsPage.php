@@ -34,11 +34,7 @@ session_start();
             echo 'Error!: ' . $ex->getMessage();
             die();
         }
-        echo $_SESSION['parent_id_2'] ;
-        echo $_SESSION['student_id_1'];
-        echo $_SESSION['student_id_2'];
-        echo $_SESSION['student_id_3'];
-        echo $_SESSION['student_id_4'];
+        
         $parentID = $_SESSION['parent_id_1'];
 
         foreach ($db->query('SELECT name, email, phone_number, best_form_contact 
