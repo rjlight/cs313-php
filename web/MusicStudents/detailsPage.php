@@ -31,8 +31,13 @@
             echo 'Error!: ' . $ex->getMessage();
             die();
         }
-
-        $parentID = $_SESSION['parent_id_1'];
+        echo $_SESSION['parent_id_1'];
+        echo $_SESSION['parent_id_2'] ;
+        echo $_SESSION['student_id_1'];
+        echo $_SESSION['student_id_2'];
+        echo $_SESSION['student_id_3'];
+        echo $_SESSION['student_id_4'];
+       /*  $parentID = $_SESSION['parent_id_1'];
 
         foreach ($db->query('SELECT name, email, phone_number, best_form_contact 
             FROM parent WHERE id =' . '\''. $parentID . '\'') as $row)
@@ -108,7 +113,7 @@
             echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
             echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             echo '<br><br>';
-        }
+        } */
     ?>
     </form>
 </div>
