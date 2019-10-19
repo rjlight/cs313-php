@@ -32,14 +32,14 @@ function checkStudent() { //to add an edit field for additional students
     }
 }
 function addStudent() {
-    var txt = "<h3>Student Information</h3> Full Name: <input type='text' name='studentName2'><br><br> Age: <input type='number' name='age2'><br><br> Instrument: <input type='text' name='instrument2'><br><br> Have you had lessons before? If yes, for how long? <br> <input type='text' name='lessonsBefore2'><br><br> Lesson Day: <input type='text' name='lessonDay2'><br><br> Lesson Time: <input type='text' name='lessonTime2'><br><br>  Would you like to add another student? <br> <input type='button' name='student2' onclick='addStudent2()' value='Add Student'><br>";
+    var txt = "<h3>Second Student Information</h3> Full Name: <input type='text' name='studentName2'><br><br> Age: <input type='number' name='age2'><br><br> Instrument: <input type='text' name='instrument2'><br><br> Have you had lessons before? If yes, for how long? <br> <input type='text' name='lessonsBefore2'><br><br> Lesson Day: <input type='text' name='lessonDay2'><br><br> Lesson Time: <input type='text' name='lessonTime2'><br><br>  Would you like to add another student? <br> <input type='button' name='student2' onclick='addStudent2()' value='Add Student'><br>";
     document.getElementById("student2").innerHTML = txt;
 }
 function addStudent2() {
-    var txt = "<h3>Student Information</h3> Full Name: <input type='text' name='studentName2'><br><br> Age: <input type='number' name='age2'><br><br> Instrument: <input type='text' name='instrument2'><br><br> Have you had lessons before? If yes, for how long? <br> <input type='text' name='lessonsBefore2'><br><br> Lesson Day: <input type='text' name='lessonDay2'><br><br> Lesson Time: <input type='text' name='lessonTime2'><br><br>  Would you like to add another student? <br> <input type='button' name='student2' onclick='addStudent3()' value='Add Student'> <br><br>";
+    var txt = "<h3>Third Student Information</h3> Full Name: <input type='text' name='studentName3'><br><br> Age: <input type='number' name='age3'><br><br> Instrument: <input type='text' name='instrument3'><br><br> Have you had lessons before? If yes, for how long? <br> <input type='text' name='lessonsBefore3'><br><br> Lesson Day: <input type='text' name='lessonDay3'><br><br> Lesson Time: <input type='text' name='lessonTime3'><br><br>  Would you like to add another student? <br> <input type='button' name='student3' onclick='addStudent3()' value='Add Student'> <br><br>";
     document.getElementById("student3").innerHTML = txt;
 }
-function addStudent2() {
-    var txt = "<h3>Student Information</h3> Full Name: <input type='text' name='studentName2'><br><br> Age: <input type='number' name='age2'><br><br> Instrument: <input type='text' name='instrument2'><br><br> Have you had lessons before? If yes, for how long? <br> <input type='text' name='lessonsBefore2'><br><br> Lesson Day: <input type='text' name='lessonDay2'><br><br> Lesson Time: <input type='text' name='lessonTime2'><br>";
+function addStudent3() {
+    var txt = "<h3>Fourth Student Information</h3> Full Name: <input type='text' name='studentName4'><br><br> Age: <input type='number' name='age4'><br><br> Instrument: <input type='text' name='instrument4'><br><br> Have you had lessons before? If yes, for how long? <br> <input type='text' name='lessonsBefore4'><br><br> Lesson Day: <input type='text' name='lessonDay4'><br><br> Lesson Time: <input type='text' name='lessonTime4'><br>";
     document.getElementById("student4").innerHTML = txt;
 }
