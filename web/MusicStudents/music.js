@@ -11,7 +11,7 @@ function checkStudent() { //to add an edit field for additional students
     var txt1, txt2, txt3; //must have nested 'else' statements 
     if (document.getElementsByName("student2").innerHTML == "") {
         txt1 = "<h3>Student Information</h3> Full Name: <input type='text' name='studentName2'><br><br> Age: <input type='number' name='age2'><br><br> Instrument: <input type='text' name='instrument2'><br><br> Have you had lessons before? If yes, for how long? <br> <input type='text' name='lessonsBefore2'><br><br> Lesson Day: <input type='text' name='lessonDay2'><br><br> Lesson Time: <input type='text' name='lessonTime2'><br><br>  Would you like to add another student? <br> Yes <input type='checkBox' name='student3' onclick='checkStudent()'> <br>";
-        document.getElementById("student2").innerHTML = txt1;
+        document.getElementById("student2").innerHTML = txt1d;
         if (document.getElementsByName("student3").innerHTML == "") {
             txt2 = "<h3>Third Student Information</h3>Full Name: <input type='text' name='studentName3'><br><br>Age: <input type='number' name='age3'><br><br>Instrument: <input type='text' name='instrument3'><br><br> Have you had lessons before? If yes, for how long? <br><input type='text' name='lessonsBefore3'><br><br> Lesson Day: <input type='text' name='lessonDay3'><br><br> Lesson Time: <input type='text' name='lessonTime3'><br><br> Would you like to add another student? <br> Yes <input type='checkBox' name='student4' onclick='checkStudent()'> <br>";
             document.getElementById("student3").innerHTML = txt2;
@@ -30,4 +30,10 @@ function checkStudent() { //to add an edit field for additional students
     else {
         document.getElementById("student2").innerHTML = "";
     }
+}
+function addStudent() {
+    var txt = "<h3>Student Information</h3> Full Name: <input type='text' name='studentName2'><br><br> Age: <input type='number' name='age2'><br><br> Instrument: <input type='text' name='instrument2'><br><br> Have you had lessons before? If yes, for how long? <br> <input type='text' name='lessonsBefore2'><br><br> Lesson Day: <input type='text' name='lessonDay2'><br><br> Lesson Time: <input type='text' name='lessonTime2'><br><br>  Would you like to add another student? <br> <input type='button' name='student2' onclick='addStudent()' value='Add Student'> <br>
+    <div id='student2'>
+    </div> <br>";
+    document.getElementById("student2").innerHTML = txt;
 }
