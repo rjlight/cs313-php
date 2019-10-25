@@ -117,7 +117,7 @@
         $statement->execute(); //create student 1
         $sID1 = $db->lastInsertId("student_id_seq"); //get student id 1
 
-        if(!is_null($sname2)){
+       /* if(!is_null($sname2)){
             // Student 2
             $query = 'INSERT INTO student(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
             $statement = $db->prepare($query);
@@ -185,7 +185,7 @@
         $statement->bindValue(':pID1', $pID1);
         $statement->bindValue(':pID2', $pID2);
 
-        $statement->execute(); //create the account!   
+        $statement->execute(); //create the account!   */
         
     }
     catch (PDOException $ex)
