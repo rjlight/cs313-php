@@ -85,7 +85,7 @@
         $statement->execute(); //create parent 1
         $pID1 = $db->lastInsertId("parent_id_seq"); //get parent id
 
-        if ($pname2 != null) {
+        if !(is_null($pname2)) {
             // We do this if parent2 exists
             $query = 'INSERT INTO parent(name, email, phone_number, best_form_contact) VALUES(:name, :email, :number, :contact)';
             $statement = $db->prepare($query);
@@ -117,7 +117,7 @@
         $statement->execute(); //create student 1
         $sID1 = $db->lastInsertId("student_id_seq"); //get student id 1
 
-        if($sname2 != null){
+        if!(is_null($sname2)){
             // Student 2
             $query = 'INSERT INTO parent(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
             $statement = $db->prepare($query);
@@ -134,7 +134,7 @@
             $statement->execute(); //create student 2
             $sID2 = $db->lastInsertId("student_id_seq"); //get student id 2
         }
-        if($sname3 != null){
+        if!(is_null($sname3)){
             // Student 3
             $query = 'INSERT INTO parent(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
             $statement = $db->prepare($query);
@@ -151,7 +151,7 @@
             $statement->execute(); //create student 3
             $sID3 = $db->lastInsertId("student_id_seq"); //get student id 3
         }
-        if($sname4 != null){
+        if!(is_null($sname4)){
             // Student 4
             $query = 'INSERT INTO parent(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
             $statement = $db->prepare($query);
