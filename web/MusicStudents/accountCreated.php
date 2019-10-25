@@ -20,7 +20,7 @@
         echo 'Error!: ' . $ex->getMessage();
         die();
     }
-/*
+
     // get the data from the POST
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -30,7 +30,7 @@
     $email1 = $_POST['email'];
     $number1 = $_POST['number'];
     $contact1 = $_POST['conact'];
-
+/*
     //parent 2 -- if created
     $pname2 = $_POST['parentName2'];
     $email2 = $_POST['email2'];
@@ -203,7 +203,7 @@
 </head>
 <body id="pageTwo">
 <div class="border">
-    <h1 class="center">Your account has been created!</h1>
-    <h3>Click <a hreft="signIn.php">here</a> to sign in
+    <h1 class="center">Thank you for creating an account!</h1>
+    <h3>Click <a href="signIn.php">here</a> to sign in
 </div>
 </html>
