@@ -39,7 +39,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
 }
-#submit {
+#submit, #button {
     color: white;
     background-color: teal;
     margin-left: auto;
