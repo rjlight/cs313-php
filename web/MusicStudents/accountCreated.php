@@ -85,7 +85,7 @@
         $statement->execute(); //create parent 1
         $pID1 = $db->lastInsertId("parent_id_seq"); //get parent id
 
-        if !(is_null($pname2)) {
+        if (!is_null($pname2)) {
             // We do this if parent2 exists
             $query = 'INSERT INTO parent(name, email, phone_number, best_form_contact) VALUES(:name, :email, :number, :contact)';
             $statement = $db->prepare($query);
