@@ -77,10 +77,10 @@
     
         // Now we bind the values to the placeholders. This does some nice things
         // including sanitizing the input with regard to sql commands.
-        $statement->bindValue(':book', $pname1);
-        $statement->bindValue(':chapter', $email1);
-        $statement->bindValue(':verse', $number1);    
-        $statement->bindValue(':content', $contact1);
+        $statement->bindValue(':name', $pname1);
+        $statement->bindValue(':email', $email1);
+        $statement->bindValue(':number', $number1);    
+        $statement->bindValue(':contact', $contact1);
 
         $statement->execute(); //create parent 1
         $pID1 = $db->lastInsertId("parent_id_seq"); //get parent id
@@ -92,10 +92,10 @@
         
             // Now we bind the values to the placeholders. This does some nice things
             // including sanitizing the input with regard to sql commands.
-            $statement->bindValue(':book', $pname2);
-            $statement->bindValue(':chapter', $email2);
-            $statement->bindValue(':verse', $number2);    
-            $statement->bindValue(':content', $contact2);
+            $statement->bindValue(':name', $pname2);
+            $statement->bindValue(':email', $email2);
+            $statement->bindValue(':nubmer', $number2);    
+            $statement->bindValue(':contact', $contact2);
 
             $statement->execute(); //create parent 2
             $pID2 = $db->lastInsertId("parent_id_seq"); //get parent id 2
