@@ -41,10 +41,10 @@ session_start();
             FROM parent WHERE id =' . '\''. $parentID . '\'') as $row)
         {
             echo '<h3>Parent Information:</h3>';
-            echo '<p>Name: ' . $row['name'] .'</p>';
-            echo '<p>Email: ' . $row['email'] .'</p>';
-            echo '<p>Phone Number: ' . $row['phone_number'] .'</p>';
-            echo '<p>Best form of contact: <br>' . $row['best_form_contact'] .'</p>';
+            echo '<p><span>Name: ' . $row['name'] .'</span></p>';
+            echo '<p><span>Email: ' . $row['email'] .'</span></p>';
+            echo '<p><span>Phone Number: ' . $row['phone_number'] .'</span></p>';
+            echo '<p><span>Best form of contact: <br>' . $row['best_form_contact'] .'</span></p>';
         }
         $parentID2 = $_SESSION['parent_id_2'];
 
@@ -53,10 +53,10 @@ session_start();
                 FROM parent WHERE id =' . '\''. $parentID2 . '\'') as $row)
             {
                 echo '<h3>Second Parent Information:</h3>';
-                echo '<p>Name: ' . $row['name'] .'</p>';
-                echo '<p>Email: ' . $row['email'] .'</p>';
-                echo '<p>Phone Number: ' . $row['phone_number'] .'</p>';
-                echo '<p>Best form of contact: <br>' . $row['best_form_contact'] .'</p>';
+                echo '<p><span>Name: ' . $row['name'] .'</span></p>';
+                echo '<p><span>Email: ' . $row['email'] .'</span></p>';
+                echo '<p><span>Phone Number: ' . $row['phone_number'] .'</span></p>';
+                echo '<p><span>Best form of contact: <br>' . $row['best_form_contact'] .'</span></p>';
             }
         }
 
@@ -66,11 +66,11 @@ session_start();
             FROM student WHERE id =' . '\''. $studentID1 . '\'') as $row)
         {
             echo '<h3>First Student Information:</h3>';
-            echo '<p>Name: ' . $row['name'] .'</p>';
-            echo '<p>Age: ' . $row['age'] .'</p>';
-            echo '<p>Instrument: ' . $row['instrument'] .'</p>';
-            echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
-            echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
+            echo '<p><span>Name: ' . $row['name'] .'</span></p>';
+            echo '<p><span>Age: ' . $row['age'] .'</span></p>';
+            echo '<p><span>Instrument: ' . $row['instrument'] .'</span></p>';
+            echo '<p><span>Have you had lessons before: <br>' . $row['lesson_before'] .'</span></p>';
+            echo '<p><span>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</span></p>';
         }
         $studentID2 = $_SESSION['student_id_2'];
         
@@ -79,11 +79,11 @@ session_start();
                 FROM student WHERE id =' . '\''. $studentID2 . '\'') as $row)
             {
                 echo '<h3>Second Student Information:</h3>';
-                echo '<p>Name: ' . $row['name'] .'</p>';
-                echo '<p>Age: ' . $row['age'] .'</p>';
-                echo '<p>Instrument: ' . $row['instrument'] .'</p>';
-                echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
-                echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
+                echo '<p><span>Name: ' . $row['name'] .'</span></p>';
+                echo '<p><span>Age: ' . $row['age'] .'</span></p>';
+                echo '<p><span>Instrument: ' . $row['instrument'] .'</span></p>';
+                echo '<p><span>Have you had lessons before: <br>' . $row['lesson_before'] .'</span></p>';
+                echo '<p><span>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</span></p>';
             }
         }
         $studentID3 = $_SESSION['student_id_3'];
@@ -92,11 +92,11 @@ session_start();
                 FROM student WHERE id =' . '\''. $studentID3 . '\'') as $row)
             {
                 echo '<h3>Third Student Information:</h3>';
-                echo '<p>Name: ' . $row['name'] .'</p>';
-                echo '<p>Age: ' . $row['age'] .'</p>';
-                echo '<p>Instrument: ' . $row['instrument'] .'</p>';
-                echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
-                echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
+                echo '<p><span>Name: ' . $row['name'] .'</span></p>';
+                echo '<p><span>Age: ' . $row['age'] .'</span></p>';
+                echo '<p><span>Instrument: ' . $row['instrument'] .'</span></p>';
+                echo '<p><span>Have you had lessons before: <br>' . $row['lesson_before'] .'</span></p>';
+                echo '<p><span>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</span></p>';
             }
         }
         $studentID4 = $_SESSION['student_id_4'];
@@ -105,11 +105,11 @@ session_start();
                 FROM student WHERE id =' . '\''. $studentID4 . '\'') as $row)
             {
                 echo '<h3>Fourth Student Information:</h3>';
-                echo '<p>Name: ' . $row['name'] .'</p>';
-                echo '<p>Age: ' . $row['age'] .'</p>';
-                echo '<p>Instrument: ' . $row['instrument'] .'</p>';
-                echo '<p>Have you had lessons before: <br>' . $row['lesson_before'] .'</p>';
-                echo '<p>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
+                echo '<p><span>Name: ' . $row['name'] .'</span></p>';
+                echo '<p><span>Age: ' . $row['age'] .'</span></p>';
+                echo '<p><span>Instrument: ' . $row['instrument'] .'</span></p>';
+                echo '<p><span>Have you had lessons before: <br>' . $row['lesson_before'] .'</span></p>';
+                echo '<p><span>Lesson Day/Time: ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</span></p>';
             }
         }
     ?>
