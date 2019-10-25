@@ -41,12 +41,13 @@
         {
             echo '<p>Username: ' . $username .'</p>';
             echo '<input type=submit value=Details>';
-            $_SESSION['parent_id_1'] = $row['parent_id_1'];
-            $_SESSION['parent_id_2'] = $row['parent_id_2'];
-            $_SESSION['student_id_1'] = $row['student_id_1'];
-            $_SESSION['student_id_2'] = $row['student_id_2'];
-            $_SESSION['student_id_3'] = $row['student_id_3'];
-            $_SESSION['student_id_4'] = $row['student_id_4'];
+            $_SESSION['\''. $username . '\''] = $username;
+            $_SESSION['parent_id_1' . '\''. $username . '\''] = $row['parent_id_1'];
+            $_SESSION['parent_id_2' . '\''. $username . '\''] = $row['parent_id_2'];
+            $_SESSION['student_id_1' . '\''. $username . '\''] = $row['student_id_1'];
+            $_SESSION['student_id_2' . '\''. $username . '\''] = $row['student_id_2'];
+            $_SESSION['student_id_3' . '\''. $username . '\''] = $row['student_id_3'];
+            $_SESSION['student_id_4' . '\''. $username . '\''] = $row['student_id_4'];
         }
     ?>
     </form>

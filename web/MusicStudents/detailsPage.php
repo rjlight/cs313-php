@@ -35,7 +35,7 @@ session_start();
             die();
         }
 
-        $parentID = $_SESSION['parent_id_1'];
+        $parentID = $_SESSION['parent_id_1' . '\''. $username . '\''];
 
         foreach ($db->query('SELECT name, email, phone_number, best_form_contact 
             FROM parent WHERE id =' . '\''. $parentID . '\'') as $row)
@@ -46,7 +46,7 @@ session_start();
             echo '<p><span>Phone Number:</span> ' . $row['phone_number'] .'</p>';
             echo '<p><span>Best form of contact:</span> <br>' . $row['best_form_contact'] .'</p>';
         }
-        $parentID2 = $_SESSION['parent_id_2'];
+        $parentID2 = $_SESSION['parent_id_2' . '\''. $username . '\''];
 
         if ($parentID2 != null) {
             foreach ($db->query('SELECT name, email, phone_number, best_form_contact 
@@ -60,7 +60,7 @@ session_start();
             }
         }
 
-        $studentID1 = $_SESSION['student_id_1'];
+        $studentID1 = $_SESSION['student_id_1' . '\''. $username . '\''];
 
         foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
             FROM student WHERE id =' . '\''. $studentID1 . '\'') as $row)
@@ -72,7 +72,7 @@ session_start();
             echo '<p><span>Have you had lessons before:</span> <br>' . $row['lesson_before'] .'</p>';
             echo '<p><span>Lesson Day/Time:</span> ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
         }
-        $studentID2 = $_SESSION['student_id_2'];
+        $studentID2 = $_SESSION['student_id_2' . '\''. $username . '\''];
         
         if ($studentID2 != null) {
             foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
@@ -86,7 +86,7 @@ session_start();
                 echo '<p><span>Lesson Day/Time:</span> ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             }
         }
-        $studentID3 = $_SESSION['student_id_3'];
+        $studentID3 = $_SESSION['student_id_3' . '\''. $username . '\''];
         if ($studentID3 != null) {
             foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
                 FROM student WHERE id =' . '\''. $studentID3 . '\'') as $row)
@@ -99,7 +99,7 @@ session_start();
                 echo '<p><span>Lesson Day/Time:</span> ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             }
         }
-        $studentID4 = $_SESSION['student_id_4'];
+        $studentID4 = $_SESSION['student_id_4' . '\''. $username . '\''];
         if ($studentID4 != null) {
             foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
                 FROM student WHERE id =' . '\''. $studentID4 . '\'') as $row)
