@@ -35,12 +35,12 @@
 
         $username = $_POST['username'];
         $password = $_POST['password'];
-        echo $username;
 
         foreach ($db->query('SELECT parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
             FROM account WHERE username =' . '\''. $username . '\' AND password =' . '\''. $password . '\'') as $row)
         {
             echo '<p>Username: ' . $username .'</p>';
+            echo '<p>Username: ' . $password .'</p>';
             echo '<input type=submit value=Details>';
             $_SESSION['parent_id_1'] = $row['parent_id_1'];
             $_SESSION['parent_id_2'] = $row['parent_id_2'];
