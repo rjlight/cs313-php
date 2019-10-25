@@ -29,13 +29,13 @@
     $pname1 = $_POST['parentName1'];
     $email1 = $_POST['email'];
     $number1 = $_POST['phoneNumber'];
-    $contact1 = $_POST['conact'];
+    $contact1 = $_POST['contact'];
 
     //parent 2 -- if created
     $pname2 = $_POST['parentName2'];
     $email2 = $_POST['email2'];
     $number2 = $_POST['phoneNumber2'];
-    $contact2 = $_POST['conact2'];
+    $contact2 = $_POST['contact2'];
 
     //student 1
     $sname1 = $_POST['studentName1'];
