@@ -15,7 +15,7 @@
         <h3>Parent Information</h3>
         Full Name: <input type="text" name="parentName1"><br><br>
         Email Address: <input type="text" name="email"><br><br>
-        Phone Number: <input type="number" name="phoneNumber"><br><br>
+        Phone Number: <input type="text" name="phoneNumber"><br><br>
         Best Form of Contact (email, text, phone call, etc.): <br>
             <input type="text" name="contact"><br><br>
         Would you like to add another parent? <br>

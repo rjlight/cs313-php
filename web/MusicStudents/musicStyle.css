@@ -13,6 +13,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+#pageFour {
+    background-image: url(violinMusic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .border {
     background-color: ivory;
     opacity: 0.7;

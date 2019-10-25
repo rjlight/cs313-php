@@ -85,7 +85,7 @@
         $statement->execute(); //create parent 1
         $pID1 = $db->lastInsertId("parent_id_seq"); //get parent id
 
-       /* if ($pname2 != null) {
+        if ($pname2 != null) {
             // We do this if parent2 exists
             $query = 'INSERT INTO parent(name, email, phone_number, best_form_contact) VALUES(:name, :email, :number, :contact)';
             $statement = $db->prepare($query);
@@ -185,7 +185,7 @@
         $statement->bindValue(':pID1', $pID1);
         $statement->bindValue(':pID2', $pID2);
 
-        $statement->execute(); //create the account!   */
+        $statement->execute(); //create the account!   
         
     }
     catch (PDOException $ex)
@@ -201,7 +201,7 @@
 <link rel="stylesheet" type="text/css" href="musicStyle.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
-<body id="pageTwo">
+<body id="pageFour">
 <div class="border">
     <h1 class="center">Thank you for creating an account!</h1>
     <h3>Click <a href="signIn.php">here</a> to sign in
