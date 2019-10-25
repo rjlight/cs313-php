@@ -102,7 +102,7 @@
         }
 
         // Student 1
-        $query = 'INSERT INTO parent(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
+        $query = 'INSERT INTO student(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
         $statement = $db->prepare($query);
     
         // Now we bind the values to the placeholders. This does some nice things
@@ -119,7 +119,7 @@
 
         /*if!(is_null($sname2)){
             // Student 2
-            $query = 'INSERT INTO parent(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
+            $query = 'INSERT INTO student(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
             $statement = $db->prepare($query);
         
             // Now we bind the values to the placeholders. This does some nice things
@@ -136,7 +136,7 @@
         }
         if!(is_null($sname3)){
             // Student 3
-            $query = 'INSERT INTO parent(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
+            $query = 'INSERT INTO student(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
             $statement = $db->prepare($query);
         
             // Now we bind the values to the placeholders. This does some nice things
@@ -153,7 +153,7 @@
         }
         if!(is_null($sname4)){
             // Student 4
-            $query = 'INSERT INTO parent(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
+            $query = 'INSERT INTO student(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
             $statement = $db->prepare($query);
         
             // Now we bind the values to the placeholders. This does some nice things
@@ -170,7 +170,7 @@
         }
 
         // Now we'll create the account because we've created the foreign key tables
-        $query = 'INSERT INTO parent(username, password, student_id_1, student_id_2, student_id_3, student_id_4, parent_id_1, parent_id_2) 
+        $query = 'INSERT INTO account(username, password, student_id_1, student_id_2, student_id_3, student_id_4, parent_id_1, parent_id_2) 
         VALUES(:username, :password, :sID1, :sID2, :sID3, :sID4, :pID1, :pID2)';
         $statement = $db->prepare($query);
     
