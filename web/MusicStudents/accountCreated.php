@@ -100,9 +100,10 @@
             $statement->execute(); //create parent 2
             $pID2 = $db->lastInsertId("parent_id_seq"); //get parent id 2
         }
-/*
+
        // Student 1
-        $query = 'INSERT INTO student(name, age, instrument, lesson_before, lesson_day, lesson_time) VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
+        $query = 'INSERT INTO student(name, age, instrument, lesson_before, lesson_day, lesson_time) 
+        VALUES(:name, :age, :instrument, :lessonb4, :lessonDay, :lessonTime)';
         $statement = $db->prepare($query);
     
         // Now we bind the values to the placeholders. This does some nice things
@@ -112,7 +113,7 @@
         $statement->bindValue(':instrument', $instrument1);    
         $statement->bindValue(':lessonb4', $lessonsB41);
         $statement->bindValue(':lessonDay', $lessonDay1);
-        $statement->bindValue)':lessonTime', $lessonTime1);
+        $statement->bindValue(':lessonTime', $lessonTime1);
 
         $statement->execute(); //create student 1
         $sID1 = $db->lastInsertId("student_id_seq"); //get student id 1
@@ -129,7 +130,7 @@
             $statement->bindValue(':instrument', $instrument2);    
             $statement->bindValue(':lessonb4', $lessonsB42);
             $statement->bindValue(':lessonDay', $lessonDay2);
-            $statement->bindValue)':lessonTime', $lessonTime2);
+            $statement->bindValue(':lessonTime', $lessonTime2);
 
             $statement->execute(); //create student 2
             $sID2 = $db->lastInsertId("student_id_seq"); //get student id 2
@@ -146,7 +147,7 @@
             $statement->bindValue(':instrument', $instrument3);    
             $statement->bindValue(':lessonb4', $lessonsB43);
             $statement->bindValue(':lessonDay', $lessonDay3);
-            $statement->bindValue)':lessonTime', $lessonTime3);
+            $statement->bindValue(':lessonTime', $lessonTime3);
 
             $statement->execute(); //create student 3
             $sID3 = $db->lastInsertId("student_id_seq"); //get student id 3
@@ -163,7 +164,7 @@
             $statement->bindValue(':instrument', $instrument4);    
             $statement->bindValue(':lessonb4', $lessonsB44);
             $statement->bindValue(':lessonDay', $lessonDay4);
-            $statement->bindValue)':lessonTime', $lessonTime4);
+            $statement->bindValue(':lessonTime', $lessonTime4);
 
             $statement->execute(); //create student 4
             $sID4 = $db->lastInsertId("student_id_seq"); //get student id 4
@@ -185,7 +186,7 @@
         $statement->bindValue(':pID1', $pID1);
         $statement->bindValue(':pID2', $pID2);
 
-        $statement->execute(); //create the account!   */
+        $statement->execute(); //create the account!  
         
     }
     catch (PDOException $ex)
