@@ -36,6 +36,7 @@ session_start();
         }
 
         $username = $_POST['username'];
+        echo $username;
         $parentID = $_SESSION['parent_id_1' . '\''. $username . '\''];
 
         foreach ($db->query('SELECT name, email, phone_number, best_form_contact 
