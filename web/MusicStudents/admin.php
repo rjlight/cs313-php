@@ -37,10 +37,11 @@
         $password = $_POST['password'];
 
         if($username="admin" && $password="admin789") {
-            foreach ($db->query('SELECT parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
+            foreach ($db->query('SELECT username, password, parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
                 FROM account') as $row)
             {
-                echo '<p>Username: ' . $username .'</p>';
+                echo '<p>Username: ' . $row['username'] .'</p>';
+                echo '<p>Password: ' . $row['password'] .'</p>';
                 echo '<input type=submit value=Details>';
                 $_SESSION['parent_id_1'] = $row['parent_id_1'];
                 $_SESSION['parent_id_2'] = $row['parent_id_2'];
