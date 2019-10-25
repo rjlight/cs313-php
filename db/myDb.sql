@@ -42,8 +42,8 @@ SET student_id_3=3;
 UPDATE parent
 SET phone_number="333-333-9333";
 
-DELETE FROM parent 
-WHERE name='b Jones';
+DELETE FROM student
+WHERE id=5;
 
 ALTER TABLE parent 
 MODIFY (phone_number VARCHAR(13) NOT NULL);
