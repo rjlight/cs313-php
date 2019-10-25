@@ -30,7 +30,7 @@
     $email1 = $_POST['email'];
     $number1 = $_POST['number'];
     $contact1 = $_POST['conact'];
-/*
+
     //parent 2 -- if created
     $pname2 = $_POST['parentName2'];
     $email2 = $_POST['email2'];
@@ -85,7 +85,7 @@
         $statement->execute(); //create parent 1
         $pID1 = $db->lastInsertId("parent_id_seq"); //get parent id
 
-        if ($pname2 != null) {
+       /* if ($pname2 != null) {
             // We do this if parent2 exists
             $query = 'INSERT INTO parent(name, email, phone_number, best_form_contact) VALUES(:name, :email, :number, :contact)';
             $statement = $db->prepare($query);
@@ -185,7 +185,7 @@
         $statement->bindValue(':pID1', $pID1);
         $statement->bindValue(':pID2', $pID2);
 
-        $statement->execute(); //create the account!   
+        $statement->execute(); //create the account!   */
         
     }
     catch (PDOException $ex)
@@ -193,7 +193,7 @@
         // we wouldn't use this in a production envirnment
         echo "Error connecting to DB. Details: $ex";
         die();
-    }*/
+    }
 ?>
 <html>
 <head>
