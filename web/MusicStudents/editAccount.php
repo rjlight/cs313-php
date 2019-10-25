@@ -8,7 +8,10 @@
 <body id="pageTwo">
 <div class="border">
     <h1 class="center">Please fill out all fields:</h1>
-    <form action="" method="post">
+    <form action="accountCreated.php" method="post">
+        <h3>Account Information</h3>
+        Username: <input type="text" name="username"><br><br>
+        Password: <input type="text" name="password"><br><br>
         <h3>Parent Information</h3>
         Full Name: <input type="text" name="parentName1"><br><br>
         Email Address: <input type="text" name="email"><br><br>
@@ -35,7 +38,7 @@
         </div>
         <div id="student4">
         </div>
-        
+        <input id="submit" type="submit" value="Create Account">
     </form>
 </div>
 </html>
