@@ -28,13 +28,13 @@
     //parent 1
     $pname1 = $_POST['parentName1'];
     $email1 = $_POST['email'];
-    $number1 = $_POST['number'];
+    $number1 = $_POST['phoneNumber'];
     $contact1 = $_POST['conact'];
 
     //parent 2 -- if created
     $pname2 = $_POST['parentName2'];
     $email2 = $_POST['email2'];
-    $number2 = $_POST['number2'];
+    $number2 = $_POST['phoneNumber2'];
     $contact2 = $_POST['conact2'];
 
     //student 1
@@ -94,7 +94,7 @@
             // including sanitizing the input with regard to sql commands.
             $statement->bindValue(':name', $pname2);
             $statement->bindValue(':email', $email2);
-            $statement->bindValue(':nubmer', $number2);    
+            $statement->bindValue(':number', $number2);    
             $statement->bindValue(':contact', $contact2);
 
             $statement->execute(); //create parent 2
