@@ -20,7 +20,7 @@
         echo 'Error!: ' . $ex->getMessage();
         die();
     }
-
+/*
     // get the data from the POST
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -193,14 +193,13 @@
         // we wouldn't use this in a production envirnment
         echo "Error connecting to DB. Details: $ex";
         die();
-    }
+    }*/
 ?>
 <html>
 <head>
 <title>Confirm Account - Music Students</title>
 <link rel="stylesheet" type="text/css" href="musicStyle.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<script src="music.js"></script>
 </head>
 <body id="pageTwo">
 <div class="border">
