@@ -48,7 +48,11 @@
 
                 if (password_verify($password, $stored_password)) {
                     //echo "Success!";
-                    header("refresh:.1; url=accountInfo.php");
+                    $_SESSION['username'] = $username;
+                    $_SESSION['password'] = $password;
+                    echo $username;
+                    echo $password;
+                    header("refresh:5; url=accountInfo.php");
                     die();
                 } else {
                     echo '<p style=color:red;>Incorrect username or password! Please check information and re-enter</p>';
