@@ -45,27 +45,27 @@ session_start();
         $stmt->execute();
         $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
-        $stmt = $db->prepare('DELETE FROM parent WHERE id=\'' . $parentID . '\'');
+        $stmt = $db->prepare('DELETE FROM parent WHERE id=' . $parentID . '');
         $stmt->execute();
         $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
-        $stmt = $db->prepare('DELETE FROM parent WHERE id=\'' . $parentID2 . '\'');
+        $stmt = $db->prepare('DELETE FROM parent WHERE id=' . $parentID2 . ');
         $stmt->execute(); //if null, nothing will happen
         $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
-        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID1 . '\'');
+        $stmt = $db->prepare('DELETE FROM student WHERE id=' . $studentID1 . ');
         $stmt->execute();
         $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
-        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID2 . '\'');
+        $stmt = $db->prepare('DELETE FROM student WHERE id=' . $studentID2 . ');
         $stmt->execute();
         $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
-        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID3 . '\'');
+        $stmt = $db->prepare('DELETE FROM student WHERE id=' . $studentID3 . ');
         $stmt->execute();
         $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID4 . '\'');
+        $stmt = $db->prepare('DELETE FROM student WHERE id=' . $studentID4 . ');
         $stmt->execute();
         $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
