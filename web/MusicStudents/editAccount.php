@@ -10,10 +10,10 @@
     <h1 class="center">Please fill out all fields:</h1>
     <form action="accountCreated.php" method="post">
         <h3>Account Information</h3>
-        Username: <input type="text" name="username"><br><br>
+        Username: <input type="text" name="username" required><br><br>
         Password: <input type="password" name="password" id="password" oninput="checkPassword()"><br><br>
         Re-Enter Password: <input type="password" name="password2" id="password2" oninput="checkPassword()"><br>
-        <p id="error1" style="visibility:hidden;">Error: Passwords don't match!</p>
+        <p id="error1" style="visibility:hidden;">*Error: Passwords don't match!</p>
         <h3>Parent Information</h3>
         Full Name: <input type="text" name="parentName1"><br><br>
         Email Address: <input type="text" name="email"><br><br>
