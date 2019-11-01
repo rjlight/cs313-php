@@ -54,5 +54,6 @@ function checkPassword() {
         document.getElementById("error1").style.visibility = "hidden";
     } else {
         document.getElementById("error1").style.visibility = "visible";
+        document.getElementById("error1").style.color = "red";
     }
 }
