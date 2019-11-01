@@ -36,7 +36,7 @@
         $password = $_POST['password'];
         $count = 0; //to count the users
 
-        if($username="admin" && $password="admin789") {
+        if($username =="admin" && $password == "admin789") {
             foreach ($db->query('SELECT username, password, parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
                 FROM account') as $row)
             {
