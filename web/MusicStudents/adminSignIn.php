@@ -11,6 +11,7 @@
     <div class="input">
         Username: <input type="text" name="username"><br><br>
         Password:  <input type="password" name="password"><br><br>
+        <p>Not an administrator? <a href="editAccount.php">Return to sign-in page</a></p>
     </div>
     <input id="submit" type="submit" value="Sign-In">
     </form>
