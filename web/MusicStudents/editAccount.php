@@ -39,8 +39,9 @@
         <div id="student3">
         </div>
         <div id="student4">
-        </div>
+        </div><br/>
         <input id="submit" type="submit" value="Create Account">
     </form>
 </div>
+</body>
 </html>

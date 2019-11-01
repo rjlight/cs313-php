@@ -23,7 +23,8 @@
 
     // get the data from the POST
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $pswd = $_POST['password']; //get password and hash it
+    $password = password_hash($pswd, PASSWORD_DEFAULT);
 
     //parent 1
     $pname1 = $_POST['parentName1'];
