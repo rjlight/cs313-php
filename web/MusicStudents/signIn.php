@@ -14,7 +14,7 @@
         <p>Don't have an account yet? Make one <a href="editAccount.php">here</a></p>
     </div>
     <input id="submit" type="submit" value="Sign-In">
-    <a id="button" href="admin.php">Admin</a>
+    <button id="button" href="admin.php">Admin</button>
     </form>
 </div>
 </html>
