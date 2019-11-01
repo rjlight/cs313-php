@@ -80,3 +80,7 @@ span {
     background-color: orangered;
     padding: 10px;
 }
+#error1 {
+    color: red;
+    visibility: hidden;
+}

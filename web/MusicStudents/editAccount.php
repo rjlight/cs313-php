@@ -12,6 +12,8 @@
         <h3>Account Information</h3>
         Username: <input type="text" name="username"><br><br>
         Password: <input type="text" name="password"><br><br>
+        Re-Enter Password: <input type="text" name="password2" oninput="checkPassword()"><br>
+        <p id="error1">Error: Passwords don't match!</p>
         <h3>Parent Information</h3>
         Full Name: <input type="text" name="parentName1"><br><br>
         Email Address: <input type="text" name="email"><br><br>
