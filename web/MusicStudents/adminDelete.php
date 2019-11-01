@@ -27,12 +27,6 @@ session_start();
             $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        }
-        catch (PDOException $ex)
-        {
-            echo 'Error!: ' . $ex->getMessage();
-            die();
-        }
 
         //get the ID's of students and parents to be deleted
         foreach ($db->query('SELECT parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
@@ -49,6 +43,7 @@ session_start();
         //Now we delete! Must do parents and students first due to foreign key constraints
         $stmt = $db->prepare('DELETE FROM parent WHERE id=\'' . $parentID . '\'');
         $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $stmt = $db->prepare('DELETE FROM parent WHERE id=\'' . $parentID2 . '\'');
         $stmt->execute(); //if null, nothing will happen
         $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID1 . '\'');
@@ -61,6 +56,12 @@ session_start();
         $stmt->execute();
         $stmt = $db->prepare('DELETE FROM account WHERE username=\'' . $username . '\'');
         $stmt->execute();
+        }
+        catch (PDOException $ex)
+        {
+            echo 'Error!: ' . $ex->getMessage();
+            die();
+        }
     ?>
     </form>
 </div>
