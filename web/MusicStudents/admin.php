@@ -37,13 +37,11 @@
         $count = 0; //to count the users
 
         if($username =="admin" && $password == "admin789") {
-            foreach ($db->query('SELECT username, password, parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
+            foreach ($db->query('SELECT username, parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
                 FROM account') as $row)
             {
                 $count++; //we will increment the count for each user
-                echo '<p>' . $count . ':</p>'; //Which account is which
-                echo '<p><span>Username:</span> ' . $row['username'] .'</p>';
-                echo '<p><span>Password:</span> ' . $row['password'] .'</p>';
+                echo '<p>' . $count . '<span>Username:</span> ' . $row['username'] .'</p>'; //Which account is which
             }
             $userArray = new SplFixedArray($count); //create a userArray with the size of the # of users
             $index = 0;

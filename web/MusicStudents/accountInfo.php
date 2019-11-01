@@ -43,7 +43,8 @@
         foreach ($db->query('SELECT parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
             FROM account WHERE username =' . '\''. $username . '\' AND password =' . '\''. $password . '\'') as $row)
         {
-            echo '<h3>Account Username: </h3>' . $username;
+            echo '<h3>Account Username: </h3>:';
+            echo '<p>' . $username . '</p>';
             echo '<input type=submit value=Details>';
             echo '<input type=text value=' .'\''. $username . '\' style=visibility:hidden name=username>';
             $_SESSION['parent_id_1' . '\''. $username . '\''] = $row['parent_id_1'];
