@@ -58,7 +58,7 @@ function checkPassword() {
     }
 }
 function checkNumber(num) {
-    var test = document.getElementById("account").value;
+    var test = document.getElementById("accountNum").value;
     if (test > num) {
         document.getElementById("error3").style.visibility = "visible";
     } else {
