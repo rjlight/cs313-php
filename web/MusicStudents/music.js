@@ -50,7 +50,7 @@ function youSure() {
 function checkPassword() {
     var p1 = document.getElementsByName('password').value;
     var p2 = document.getElementsByName('password2').value;
-    if (p1 === p2) {
+    if (p1 == p2) {
         document.getElementById("error1").style.visibility = "hidden";
     } else {
         document.getElementById("error1").style.visibility = "visible";
