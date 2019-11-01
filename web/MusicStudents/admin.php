@@ -49,8 +49,8 @@
                 $_SESSION['student_id_3' . '\''. $username . '\''] = $row['student_id_3'];
                 $_SESSION['student_id_4' . '\''. $username . '\''] = $row['student_id_4'];
             }
-            //$userArray = new SplFixedArray($count); //create a userArray with the size of the # of users
-            $userArray = array();
+            $userArray = new SplFixedArray($count); //create a userArray with the size of the # of users
+            //$userArray = array();
             $index = 0;
             foreach ($db->query('SELECT username FROM account') as $row) {
                 $userArray[$index] = $row['username']; //we'll put each user into the userArray
@@ -61,7 +61,7 @@
             echo '<input type=submit name=submit>';  //this is where we'll get the account # ^ 
         } else {
             echo "Sorry, you are not an administrator for this site<br>
-            Please return to the <a href=\'signIn.php\'>sign-in page</a>"
+            Please return to the <a href=\'signIn.php\'>sign-in page</a>";
         }
     ?>
     </form>
