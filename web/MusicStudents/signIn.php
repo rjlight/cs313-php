@@ -50,8 +50,6 @@
                     //echo "Success!";
                     $_SESSION['username'] = $username;
                     $_SESSION['password'] = $password;
-                    echo $username;
-                    echo $password;
                     header("refresh:5; url=accountInfo.php");
                     die();
                 } else {
