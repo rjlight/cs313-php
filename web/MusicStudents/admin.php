@@ -56,9 +56,9 @@
             . '<input type=text name=account>';
             echo '<input type=submit name=submit value=Details id=color>';  //this is where we'll get the account # ^ 
             echo '<hr><p><span>TO DELETE</span>:Please enter the account number you would like to delete: </p>'
-            . '<input type=text name=delete onclick=alert()>';
+            . '<input type=text name=delete onclick=alert(Warning! Deletions cannot be undone!) oninput=youSure()>';
             echo '<input type=submit name=submit value=Details id=color>';  //this is where we'll get the account # ^
-            echo '<p id=alert></p>';
+            echo '<p id=alert></p>'; //two alerts for safety
         } else {
             echo "Sorry, you are not an administrator for this site<br>
             Please return to the <a href=\'signIn.php\'>sign-in page</a>";
