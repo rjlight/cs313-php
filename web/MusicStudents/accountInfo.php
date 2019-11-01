@@ -35,7 +35,6 @@
 
         $username = $_POST['username'];
         $password = $_POST['password'];
-        //create an array of users to display and pass the username
 
         foreach ($db->query('SELECT parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
             FROM account WHERE username =' . '\''. $username . '\' AND password =' . '\''. $password . '\'') as $row)
