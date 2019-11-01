@@ -39,7 +39,7 @@ session_start();
         //echo $account;
         $username = $_SESSION['userArray'][$account - 1];                  //to get the right user
         //echo $username;
-
+        echo '<h3>Account information for ' .$username .'</h3>';
         //to get all the correct parent and student id's
         foreach ($db->query('SELECT parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
             FROM account WHERE username =\'' . $username . '\'') as $row)
@@ -123,7 +123,7 @@ session_start();
                 echo '<p><span>Lesson Day/Time:</span> ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             }
         }
-        echo '<hr><p>TO DELETE: Please enter the username for this account: </p>'
+        echo '<hr><p><strong>TO DELETE</strong>: Please enter the username for this account: </p>'
         . '<input type=text name=delete onclick=alert(\'Warning! Deletions cannot be undone!\') oninput=youSure()>';
         echo '<input type=submit name=submit value=Delete id=color>';  //this is where we'll get the account # ^
         echo '<p id=alert></p>'; //two alerts for safety
