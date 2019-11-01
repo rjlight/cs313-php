@@ -49,7 +49,7 @@
                 $_SESSION['student_id_3' . '\''. $username . '\''] = $row['student_id_3'];
                 $_SESSION['student_id_4' . '\''. $username . '\''] = $row['student_id_4'];
             }
-            $userArray = array($count); //create a userArray with the size of the # of users
+            $userArray = new SplFixedArray($count); //create a userArray with the size of the # of users
             $index = 0;
             foreach ($db->query('SELECT username FROM account') as $row) {
                 $userArray[$index] = $row['username']; //we'll put each user into the userArray
