@@ -1,3 +1,7 @@
+<?php
+    // Start the session
+    session_start();
+?>
 <html>
 <head>
 <title>Sign In Page - Music Students</title>
@@ -12,8 +16,6 @@
         Username: <input type="text" name="username"><br><br>
         Password:  <input type="password" name="password"><br><br>
         <?php
-        session_start();
-
         try {
             $dbUrl = getenv('DATABASE_URL');
 
@@ -46,10 +48,10 @@
 
                 if (password_verify($password, $stored_password)) {
                     //echo "Success!";
-                    header("refresh:1; url=accountInfo.php");
+                    header("refresh:.1; url=accountInfo.php");
                     die();
                 } else {
-                    echo '<p id=error2>Incorrect username or password! Please check information and re-enter</p>';
+                    echo '<p style=color:red;>Incorrect username or password! Please check information and re-enter</p>';
                 }
             } catch (PDOException $ex) {
                 echo 'Error!: ' . $ex->getMessage();
