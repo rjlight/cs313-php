@@ -49,7 +49,7 @@
                 if (password_verify($password, $stored_password)) {
                     //echo "Success!";
                     $_SESSION['username'] = $username;
-                    $_SESSION['password'] = $password;
+                    $_SESSION['password'] = $stored_password;
                     header("refresh:5; url=accountInfo.php");
                     die();
                 } else {
