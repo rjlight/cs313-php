@@ -44,5 +44,6 @@ function addStudent3() {
     document.getElementById("student4").innerHTML = txt;
 }
 function youSure() {
+    document.getElementById("alert").style.visibility = 'visible';
     document.getElementById("alert").innerHTML = "WARNING! You are about to delete an account. This action cannot be undone.";
 }

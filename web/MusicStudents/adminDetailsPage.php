@@ -124,9 +124,9 @@ session_start();
             }
         }
         echo '<hr><p><strong>TO DELETE</strong>: Please enter the username for this account: </p>'
-        . '<input type=text name=delete onclick=alert(\'Warning! Deletions cannot be undone!\') oninput=\"youSure()\">';
+        . '<input type=text name=delete onclick=alert() oninput=\"youSure()\">';
         echo '<input type=submit name=submit value=Delete id=color>';  //this is where we'll get the account # ^
-        echo '<p id=alert></p>'; //two alerts for safety
+        echo '<p id=alert style=visibility:hidden></p>'; //two alerts for safety
     ?>
     </form>
 </div>
