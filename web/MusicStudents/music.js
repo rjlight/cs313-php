@@ -48,8 +48,8 @@ function youSure() {
     document.getElementById("alert").innerHTML = "WARNING! You are about to delete an account. This action cannot be undone.";
 }
 function checkPassword() {
-    var p1 = document.getElementsByName('password').value;
-    var p2 = document.getElementsByName('password2').value;
+    var p1 = document.getElementById('password').value;
+    var p2 = document.getElementById('password2').value;
     if (p1 == p2) {
         document.getElementById("error1").style.visibility = "hidden";
     } else {
