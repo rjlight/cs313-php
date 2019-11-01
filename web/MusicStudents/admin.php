@@ -44,12 +44,6 @@
                 echo '<p>' . $count . ':'; //Which account is which
                 echo '<p><span>Username:</span> ' . $row['username'] .'</p>';
                 echo '<p><span>Password:</span> ' . $row['password'] .'</p>';
-                $_SESSION['parent_id_1' . '\''. $username . '\''] = $row['parent_id_1'];
-                $_SESSION['parent_id_2' . '\''. $username . '\''] = $row['parent_id_2'];
-                $_SESSION['student_id_1' . '\''. $username . '\''] = $row['student_id_1'];
-                $_SESSION['student_id_2' . '\''. $username . '\''] = $row['student_id_2'];
-                $_SESSION['student_id_3' . '\''. $username . '\''] = $row['student_id_3'];
-                $_SESSION['student_id_4' . '\''. $username . '\''] = $row['student_id_4'];
             }
             $userArray = new SplFixedArray($count); //create a userArray with the size of the # of users
             $index = 0;
@@ -60,7 +54,7 @@
             $_SESSION['userArray'] = $userArray;      //now we have an array of users
             echo '<p>Please enter the account number you would like to see the details for: </p>'
             . '<input type=text name=account>';
-            echo '<input type=submit name=submit value=Details>';  //this is where we'll get the account # ^ 
+            echo '<input type=submit name=submit value=Details id=color>';  //this is where we'll get the account # ^ 
         } else {
             echo "Sorry, you are not an administrator for this site<br>
             Please return to the <a href=\'signIn.php\'>sign-in page</a>";

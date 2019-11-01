@@ -45,7 +45,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-#button {
+#button, #color {
     color: white;
     background-color:purple;
     margin-left: auto;
