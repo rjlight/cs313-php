@@ -37,7 +37,7 @@ session_start();
 
         $account = $_POST['account'];
         echo $account;
-        $username = $_SESSION['userArray'][$account];                  //to get the right user
+        $username = $_SESSION['userArray'][$account - 1];                  //to get the right user
         echo $username;
 
         //to get all the correct parent and student id's
