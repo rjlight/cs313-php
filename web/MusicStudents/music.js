@@ -57,3 +57,11 @@ function checkPassword() {
         document.getElementById("error1").style.color = "red";
     }
 }
+function checkNumber(num) {
+    var test = document.getElementById("account").value;
+    if (test > num) {
+        document.getElementById("error3").style.visibility = "visible";
+    } else {
+        document.getElementById("error3").style.visibility = "hidden";
+    }
+}

@@ -51,8 +51,9 @@
             }
             $_SESSION['userArray'] = $userArray;      //now we have an array of users
             echo '<hr><p>Please enter the account number you would like to see the details for: </p>'
-            . '<input type=text name=account>';
+            . '<input type=text name=account id=account oninput=checkNumber('.$count.')>'; //use js to ensure correct # entered
             echo '<input type=submit name=submit value=Details id=color1>';  //this is where we'll get the account # ^ 
+            echo '<p id=error3 style=visibility:hidden;color:red;>Error! There is no account associated with that number!</p>';
         } else {
             echo "Sorry, you are not an administrator for this site<br>
             Please return to the <a href=signIn.php>sign-in page</a>";

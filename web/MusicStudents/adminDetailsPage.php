@@ -13,8 +13,13 @@ session_start();
     <?php
         $account = $_POST['account'];
         $username = $_SESSION['userArray'][$account - 1];          //to get the right user
-        echo $account;
-        echo '<h1 class="center">Account Details - ' . $username . '</h1>';
+        if ($username != null) {
+            echo '<h1 class="center">Account Details - ' . $username . '</h1>';
+        } else {
+            echo '<h1 class="center">Error! Account number selected does not exist</h1>';
+            echo '<h3>Please go back and check account number selected</h3>';
+        }
+        
     ?>
     <!--will have sections for parents and students-->
     <form action="adminDelete.php" method="post">
