@@ -51,6 +51,9 @@
                 $_SESSION['student_id_3' . '\''. $username . '\''] = $row['student_id_3'];
                 $_SESSION['student_id_4' . '\''. $username . '\''] = $row['student_id_4'];
             }
+        } else {
+            echo "sorry, you are not an administrator for this site<br>
+            Please return to the <a href=\'signIn.php\'>sign-in page</a>"
         }
     ?>
     </form>
