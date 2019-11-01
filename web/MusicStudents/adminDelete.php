@@ -40,22 +40,34 @@ session_start();
             $studentID4 = $row['student_id_4'];
         }
 
-        //Now we delete! Must do parents and students first due to foreign key constraints
+        //Now we delete! Must delete account first due to foreign key constraints
+        $stmt = $db->prepare('DELETE FROM account WHERE username=\'' . $username . '\'');
+        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
         $stmt = $db->prepare('DELETE FROM parent WHERE id=\'' . $parentID . '\'');
         $stmt->execute();
         $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
         $stmt = $db->prepare('DELETE FROM parent WHERE id=\'' . $parentID2 . '\'');
         $stmt->execute(); //if null, nothing will happen
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
         $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID1 . '\'');
         $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
         $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID2 . '\'');
         $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
         $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID3 . '\'');
         $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
         $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID4 . '\'');
         $stmt->execute();
-        $stmt = $db->prepare('DELETE FROM account WHERE username=\'' . $username . '\'');
-        $stmt->execute();
+        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
         catch (PDOException $ex)
         {
