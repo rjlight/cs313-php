@@ -41,9 +41,9 @@
                 FROM account') as $row)
             {
                 $count++; //we will increment the count for each user
-                echo '<p>' . $count . ':<br>'; //Which account is which
-                echo '<p><span>Username: ' . $row['username'] .'</span></p>';
-                echo '<p><span>Password: ' . $row['password'] .'</span></p>';
+                echo '<p>' . $count . ':'; //Which account is which
+                echo '<p><span>Username:</span> ' . $row['username'] .'</p>';
+                echo '<p><span>Password:</span> ' . $row['password'] .'</p>';
                 $_SESSION['parent_id_1' . '\''. $username . '\''] = $row['parent_id_1'];
                 $_SESSION['parent_id_2' . '\''. $username . '\''] = $row['parent_id_2'];
                 $_SESSION['student_id_1' . '\''. $username . '\''] = $row['student_id_1'];
@@ -58,7 +58,7 @@
                 $index++;                             //increment the index
             }
             $_SESSION['userArray'] = $userArray;      //now we have an array of users
-            echo '<p>Please enter the account number you would like to see the details for: /p>'
+            echo '<p>Please enter the account number you would like to see the details for: </p>'
             . '<br><input type=text name=account>';
             echo '<input type=submit name=submit value=Details>';  //this is where we'll get the account # ^ 
         } else {
