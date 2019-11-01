@@ -17,4 +17,5 @@
     <button id="button" onclick="window.location.href='admin.php';">Admin</button>
     </form>
 </div>
+</body>
 </html>
