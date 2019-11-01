@@ -12,8 +12,6 @@ session_start();
     <?php
         $username = $_POST['delete'];    
         echo '<h1 class=center>Account for user ' . $username . 'has been deleted:</h1>';
-    ?>
-    <?php
         try
         {
             $dbUrl = getenv('DATABASE_URL');
