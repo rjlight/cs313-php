@@ -67,7 +67,7 @@ session_start();
         foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
             FROM student WHERE id =' . '\''. $studentID1 . '\'') as $row)
         {
-            echo '<h3>First Student Information:</h3>';
+            echo '<hr><h3>First Student Information:</h3>';
             echo '<p><span>Name:</span> ' . $row['name'] .'</p>';
             echo '<p><span>Age:</span> ' . $row['age'] .'</p>';
             echo '<p><span>Instrument:</span> ' . $row['instrument'] .'</p>';

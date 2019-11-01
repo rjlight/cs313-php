@@ -36,9 +36,9 @@ session_start();
         }
 
         $account = $_POST['account'];
-        echo $account;
+        //echo $account;
         $username = $_SESSION['userArray'][$account - 1];                  //to get the right user
-        echo $username;
+        //echo $username;
 
         //to get all the correct parent and student id's
         foreach ($db->query('SELECT parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
@@ -77,7 +77,7 @@ session_start();
         foreach ($db->query('SELECT name, age, instrument, lesson_before, lesson_day, lesson_time
             FROM student WHERE id =' . '\''. $studentID1 . '\'') as $row)
         {
-            echo '<h3>First Student Information:</h3>';
+            echo '<hr><h3>First Student Information:</h3>';
             echo '<p><span>Name:</span> ' . $row['name'] .'</p>';
             echo '<p><span>Age:</span> ' . $row['age'] .'</p>';
             echo '<p><span>Instrument:</span> ' . $row['instrument'] .'</p>';

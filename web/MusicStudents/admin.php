@@ -41,7 +41,7 @@
                 FROM account') as $row)
             {
                 $count++; //we will increment the count for each user
-                echo '<p>' . $count . ':'; //Which account is which
+                echo '<p>' . $count . ':</p>'; //Which account is which
                 echo '<p><span>Username:</span> ' . $row['username'] .'</p>';
                 echo '<p><span>Password:</span> ' . $row['password'] .'</p>';
             }
@@ -52,9 +52,13 @@
                 $index++;                             //increment the index
             }
             $_SESSION['userArray'] = $userArray;      //now we have an array of users
-            echo '<p>Please enter the account number you would like to see the details for: </p>'
+            echo '<hr><p>Please enter the account number you would like to see the details for: </p>'
             . '<input type=text name=account>';
             echo '<input type=submit name=submit value=Details id=color>';  //this is where we'll get the account # ^ 
+            echo '<hr><p><span>TO DELETE</span>:Please enter the account number you would like to delete: </p>'
+            . '<input type=text name=delete onclick=alert()>';
+            echo '<input type=submit name=submit value=Details id=color>';  //this is where we'll get the account # ^
+            echo '<p id=alert></p>'
         } else {
             echo "Sorry, you are not an administrator for this site<br>
             Please return to the <a href=\'signIn.php\'>sign-in page</a>";
