@@ -54,7 +54,7 @@
             $_SESSION['userArray'] = $userArray;      //now we have an array of users
             echo '<hr><p>Please enter the account number you would like to see the details for: </p>'
             . '<input type=text name=account>';
-            echo '<input type=submit name=submit value=Details id=color>';  //this is where we'll get the account # ^ 
+            echo '<input type=submit name=submit value=Details id=color1>';  //this is where we'll get the account # ^ 
         } else {
             echo "Sorry, you are not an administrator for this site<br>
             Please return to the <a href=\'signIn.php\'>sign-in page</a>";
