@@ -36,25 +36,26 @@
         $password = $_POST['password'];
         $_SESSION['username'] = $username;
         $_SESSION['password'] = $password;
+        if ($username != null && $password != null) {
+            try { //get the password for this user
+                $stmt = $db->prepare("SELECT password FROM account WHERE username = :name");
+                            $stmt->bindValue(':name', $username, PDO::PARAM_STR);
+                            $stmt->execute();
+                            $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                            $stored_password = $row[0]['password'];
 
-        try { //get the password for this user
-            $stmt = $db->prepare("SELECT password FROM account WHERE username = :name");
-                        $stmt->bindValue(':name', $username, PDO::PARAM_STR);
-                        $stmt->execute();
-                        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                        $stored_password = $row[0]['password'];
-
-            if (password_verify($password, $stored_password)) {
-                //echo "Success!";
-                header("refresh:1; url=accountInfo.php");
-                die();
-            } else {
-                echo '<p id=error2>Incorrect username or password! Please check information and re-enter</p>';
+                if (password_verify($password, $stored_password)) {
+                    //echo "Success!";
+                    header("refresh:1; url=accountInfo.php");
+                    die();
+                } else {
+                    echo '<p id=error2>Incorrect username or password! Please check information and re-enter</p>';
+                    die();
+                }
+            } catch (PDOException $ex) {
+                echo 'Error!: ' . $ex->getMessage();
                 die();
             }
-        } catch (PDOException $ex) {
-            echo 'Error!: ' . $ex->getMessage();
-            die();
         }
         ?>
         <p>Don't have an account yet? Make one <a href="editAccount.php">here</a></p>
