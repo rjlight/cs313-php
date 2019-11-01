@@ -41,7 +41,8 @@
                 FROM account') as $row)
             {
                 $count++; //we will increment the count for each user
-                echo '<p>' . $count . '<span>Username:</span> ' . $row['username'] .'</p>'; //Which account is which
+                echo  '<p>'. $count . '.</p>
+                echo '<p><span>Username:</span> ' . $row['username'] .'</p>'; //Which account is which
             }
             $userArray = new SplFixedArray($count); //create a userArray with the size of the # of users
             $index = 0;
