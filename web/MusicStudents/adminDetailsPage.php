@@ -6,6 +6,7 @@ session_start();
 <title>Admin Account Details - Music Students</title>
 <link rel="stylesheet" type="text/css" href="musicStyle.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<script src="music.js"></script>
 </head>
 <body id="pageThree">
 <div class="border">
@@ -124,8 +125,8 @@ session_start();
             }
         }
         echo '<hr><p><strong>TO DELETE</strong>: Please enter the username for this account: </p>'
-        . '<input type=text name=delete onclick=alert() oninput=\"youSure()\">';
-        echo '<input type=submit name=submit value=Delete id=color>';  //this is where we'll get the account # ^
+        . '<input type=text name=delete oninput=youSure()>';
+        echo '<input onclick=alert(warning! About to delete account!) type=submit name=submit value=Delete id=color>';  //this is where we'll get the account # ^
         echo '<p id=alert style=visibility:hidden></p>'; //two alerts for safety
     ?>
     </form>
