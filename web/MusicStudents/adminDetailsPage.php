@@ -10,7 +10,12 @@ session_start();
 </head>
 <body id="pageThree">
 <div class="border">
-    <h1 class="center">Account Details - Admin:</h1>
+    <?php
+        $account = $_POST['account'];
+        $username = $_SESSION['userArray'][$account - 1];          //to get the right user
+      
+        echo '<h1 class="center">Account Details - ' . $username . '</h1>';
+    ?>
     <!--will have sections for parents and students-->
     <form action="adminDelete.php" method="post">
     <?php
@@ -38,9 +43,8 @@ session_start();
 
         $account = $_POST['account'];
         //echo $account;
-        $username = $_SESSION['userArray'][$account - 1];                  //to get the right user
+        $username = $_SESSION['userArray'][$account - 1];          //to get the right user
         //echo $username;
-        echo '<h3>Account information for: ' .$username .'</h3>';
         //to get all the correct parent and student id's
         foreach ($db->query('SELECT parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
             FROM account WHERE username =\'' . $username . '\'') as $row)
