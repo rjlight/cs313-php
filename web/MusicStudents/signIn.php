@@ -50,7 +50,6 @@
                     die();
                 } else {
                     echo '<p id=error2>Incorrect username or password! Please check information and re-enter</p>';
-                    die();
                 }
             } catch (PDOException $ex) {
                 echo 'Error!: ' . $ex->getMessage();
