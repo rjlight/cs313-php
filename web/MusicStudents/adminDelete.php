@@ -49,19 +49,19 @@ session_start();
         }
 
         //Now we delete! Must do parents and students first due to foreign key constraints
-        $stmt = $db->prepare('DELETE FROM parent WHERE id=\'' . $parentID . \'');
+        $stmt = $db->prepare('DELETE FROM parent WHERE id=\'' . $parentID . '\'');
         $stmt->execute();
-        $stmt = $db->prepare('DELETE FROM parent WHERE id=\'' . $parentID2 . \'');
+        $stmt = $db->prepare('DELETE FROM parent WHERE id=\'' . $parentID2 . '\'');
         $stmt->execute(); //if null, nothing will happen
-        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID1 . \'');
+        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID1 . '\'');
         $stmt->execute();
-        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID2 . \'');
+        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID2 . '\'');
         $stmt->execute();
-        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID3 . \'');
+        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID3 . '\'');
         $stmt->execute();
-        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID4 . \'');
+        $stmt = $db->prepare('DELETE FROM student WHERE id=\'' . $studentID4 . '\'');
         $stmt->execute();
-        $stmt = $db->prepare('DELETE FROM account WHERE username=\'' . $username . \'');
+        $stmt = $db->prepare('DELETE FROM account WHERE username=\'' . $username . '\'');
         $stmt->execute();
     ?>
     </form>

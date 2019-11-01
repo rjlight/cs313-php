@@ -39,7 +39,7 @@ session_start();
         //echo $account;
         $username = $_SESSION['userArray'][$account - 1];                  //to get the right user
         //echo $username;
-        echo '<h3>Account information for ' .$username .'</h3>';
+        echo '<h3>Account information for: ' .$username .'</h3>';
         //to get all the correct parent and student id's
         foreach ($db->query('SELECT parent_id_1, parent_id_2, student_id_1, student_id_2, student_id_3, student_id_4 
             FROM account WHERE username =\'' . $username . '\'') as $row)
