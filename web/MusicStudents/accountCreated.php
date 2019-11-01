@@ -206,6 +206,6 @@
 <body id="pageFour">
 <div class="border">
     <h1 class="center">Thank you for creating an account!</h1>
-    <h3>Click <a href="signIn.php">here</a> to sign in
+    <center><h3>Click <a href="signIn.php">here</a> to sign in</h3></center>
 </div>
 </html>

@@ -1,3 +1,7 @@
+<?php
+        // Start the session
+        session_start();
+?>
 <html>
 <head>
 <title>Account Manager - Music Students</title>
@@ -9,8 +13,6 @@
     <h1 class="center">Account Information:</h1>
     <form action="detailsPage.php" method="post">
     <?php
-        // Start the session
-        session_start();
         try
         {
             $dbUrl = getenv('DATABASE_URL');

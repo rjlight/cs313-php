@@ -57,7 +57,7 @@
             echo '<input type=submit name=submit value=Details id=color1>';  //this is where we'll get the account # ^ 
         } else {
             echo "Sorry, you are not an administrator for this site<br>
-            Please return to the <a href=\'signIn.php\'>sign-in page</a>";
+            Please return to the <a href=signIn.php>sign-in page</a>";
         }
     ?>
     </form>

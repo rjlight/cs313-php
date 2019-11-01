@@ -70,6 +70,9 @@ h3 {
 #error1 {
     color: red;
 }
+#error2 {
+    color: red;
+}
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
