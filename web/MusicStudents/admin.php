@@ -59,7 +59,7 @@
             }
             $_SESSION['userArray'] = $userArray;      //now we have an array of users
             echo '<p>Please enter the account number you would like to see the details for: </p>'
-            . '<br><input type=text name=account>';
+            . '<input type=text name=account>';
             echo '<input type=submit name=submit value=Details>';  //this is where we'll get the account # ^ 
         } else {
             echo "Sorry, you are not an administrator for this site<br>
