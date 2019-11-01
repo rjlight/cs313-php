@@ -10,12 +10,8 @@ session_start();
 <body id="pageThree">
 <div class="border">
     <?php
-        $account = $_POST['account'];
-        $account -= $account;
-        //echo $account;
-        $username = $_SESSION['userArray'][$account];                  //to get the right user
-        //echo $username;    
-        echo '<h1 class=center>Account #$account for user $username has been deleted:</h1>';
+        $username = $_POST['delete'];    
+        echo '<h1 class=center>Account for user $username has been deleted:</h1>';
     ?>
     <?php
         try

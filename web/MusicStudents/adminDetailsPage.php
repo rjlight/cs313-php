@@ -11,7 +11,7 @@ session_start();
 <div class="border">
     <h1 class="center">Account Details - Admin:</h1>
     <!--will have sections for parents and students-->
-    <form action="" method="post">
+    <form action="adminDelete.php" method="post">
     <?php
         try
         {
@@ -123,6 +123,10 @@ session_start();
                 echo '<p><span>Lesson Day/Time:</span> ' . $row['lesson_day'] . ' at ' . $row['lesson_time'] .'</p>';
             }
         }
+        echo '<hr><p>TO DELETE: Please enter the username for this account: </p>'
+        . '<input type=text name=delete onclick=alert(\'Warning! Deletions cannot be undone!\') oninput=youSure()>';
+        echo '<input type=submit name=submit value=Delete id=color>';  //this is where we'll get the account # ^
+        echo '<p id=alert></p>'; //two alerts for safety
     ?>
     </form>
 </div>
