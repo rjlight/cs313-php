@@ -13,7 +13,7 @@ session_start();
     <?php
         $account = $_POST['account'];
         $username = $_SESSION['userArray'][$account - 1];          //to get the right user
-      
+        echo $account;
         echo '<h1 class="center">Account Details - ' . $username . '</h1>';
     ?>
     <!--will have sections for parents and students-->
