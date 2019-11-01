@@ -51,7 +51,7 @@ session_start();
             
             if ($parentID2 != null) {
                 $stmt = $db->prepare('DELETE FROM parent WHERE id=' . $parentID2);
-                $stmt->execute(); //if null, nothing will happen
+                $stmt->execute(); 
                 $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
             }
             
@@ -69,7 +69,7 @@ session_start();
                 $stmt->execute();
                 $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
             }
-            if ($studentID4 != null)     
+            if ($studentID4 != null) {    
                 $stmt = $db->prepare('DELETE FROM student WHERE id=' . $studentID4);
                 $stmt->execute();
                 $row = $stmt->fetchAll(PDO::FETCH_ASSOC);

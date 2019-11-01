@@ -18,7 +18,7 @@ best_form_contact  varchar(20) NOT NULL
 
 CREATE TABLE account (
 username            varchar(30) NOT NULL,
-password            varchar(30) NOT NULL,
+password            varchar(255) NOT NULL,
 student_id_1        int NOT NULL REFERENCES student(id),
 student_id_2        int REFERENCES student(id),
 student_id_3        int REFERENCES student(id),
