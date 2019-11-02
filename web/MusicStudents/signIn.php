@@ -50,7 +50,7 @@
                     //echo "Success!";
                     $_SESSION['username'] = $username;
                     $_SESSION['password'] = $stored_password;
-                    header("refresh:5; url=accountInfo.php");
+                    header("refresh:.01; url=accountInfo.php");
                     die();
                 } else {
                     echo '<p style=color:red;>Incorrect username or password! Please check information and re-enter</p>';
