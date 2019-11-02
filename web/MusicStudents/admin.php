@@ -3,6 +3,7 @@
 <title>Admin Manager - Music Students</title>
 <link rel="stylesheet" type="text/css" href="musicStyle.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<script src="music.js"></script>
 </head>
 <body id="pageOne">
 <div class="border">
@@ -50,7 +51,6 @@
                 $userArray[$index] = $row['username']; //we'll put each user into the userArray
                 $index++;                             //increment the index
             }
-            echo $count;
             $_SESSION['userArray'] = $userArray;      //now we have an array of users
             echo '<hr><p>Please enter the account number you would like to see the details for: </p>';
             echo '<input type=text name=account id=accountNum oninput=checkNumber('.$count.')>'; //use js to ensure correct # entered
