@@ -59,7 +59,7 @@ function checkPassword() {
 }
 function checkNumber(num) {
     var test = document.getElementById("accountNum").value;
-    if (test > num) {
+    if (test > num || num == 0) {
         document.getElementById("error3").style.visibility = "visible";
     } else {
         document.getElementById("error3").style.visibility = "hidden";
