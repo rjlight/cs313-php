@@ -50,6 +50,7 @@
                 $userArray[$index] = $row['username']; //we'll put each user into the userArray
                 $index++;                             //increment the index
             }
+            echo $count;
             $_SESSION['userArray'] = $userArray;      //now we have an array of users
             echo '<hr><p>Please enter the account number you would like to see the details for: </p>';
             echo '<input type=text name=account id=accountNum oninput=checkNumber('.$count.')>'; //use js to ensure correct # entered
